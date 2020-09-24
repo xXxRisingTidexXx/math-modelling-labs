@@ -8,7 +8,7 @@ from numpy import array
 def main():
     layers = [
         Layer(
-            'regions',
+            'oblasts',
             Style('#deeed5', '#b46198', 2),
             Style('#fff', '#fff', 0)
         ),
