@@ -6,19 +6,22 @@ from numpy import array
 
 
 def main():
-    styles = [
-        Style('#fff', '#fff', 0),
-        Style('#deeed5', '#b46198', 2),
-        Style('#9fcee5', '#2a5eea', 1)
-    ]
     layers = [
-        Layer(n, styles[i], styles[i - 1])
-        for i, n in enumerate(['oblasts', 'rivers'], 1)
+        Layer(
+            'regions',
+            Style('#deeed5', '#b46198', 2),
+            Style('#fff', '#fff', 0)
+        ),
+        Layer(
+            'rivers',
+            Style('#9fcee5', '#2a5eea', 1),
+            Style('#deeed5', '#2a5eea', 1)
+        )
     ]
     figure = Figure()
     for layer in layers:
         figure.add_traces(layer.scatters())
-    figure.update_layout(plot_bgcolor='rgba(0,0,0,0)')
+    figure.update_layout(plot_bgcolor='rgba(0,0,0,0)', showlegend=False)
     figure.update_xaxes(
         showline=True,
         linewidth=2,
@@ -36,25 +39,11 @@ def main():
     figure.show()
 
 
-class Style:
-    __slots__ = ['fill_color', 'line_color', 'line_width']
-
-    def __init__(
-        self,
-        fill_color: str,
-        line_color: str,
-        line_width: int
-    ):
-        self.fill_color = fill_color
-        self.line_color = line_color
-        self.line_width = line_width
-
-
 class Layer:
     __slots__ = ['_path', '_outer_style', '_inner_style']
     _root_dir = Path(__file__).parent.parent
 
-    def __init__(self, name: str, outer_style: Style, inner_style: Style):
+    def __init__(self, name: str, outer_style: 'Style', inner_style: 'Style'):
         self._path = self._root_dir / f'layers/{name}.geojson'
         self._outer_style = outer_style
         self._inner_style = inner_style
@@ -99,8 +88,22 @@ class Layer:
             for i, r in enumerate(map(array, coordinates))
         )
 
-    def _style(self, i: int) -> Style:
+    def _style(self, i: int) -> 'Style':
         return self._outer_style if i == 0 else self._inner_style
+
+
+class Style:
+    __slots__ = ['fill_color', 'line_color', 'line_width']
+
+    def __init__(
+        self,
+        fill_color: str,
+        line_color: str,
+        line_width: int
+    ):
+        self.fill_color = fill_color
+        self.line_color = line_color
+        self.line_width = line_width
 
 
 if __name__ == '__main__':
