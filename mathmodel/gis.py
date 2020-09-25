@@ -8,12 +8,12 @@ from numpy import array
 def main():
     layers = [
         Layer(
-            'oblasts',
+            'oblastsx',
             Style('#deeed5', '#b46198', 2),
             Style('#fff', '#fff', 0)
         ),
         Layer(
-            'rivers',
+            'riversx',
             Style('#9fcee5', '#2a5eea', 1),
             Style('#deeed5', '#2a5eea', 1)
         )
