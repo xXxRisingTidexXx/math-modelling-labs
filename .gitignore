@@ -72,5 +72,3 @@ venv.bak/
 dmypy.json
 .pyre/
 .idea
-mathmodel/cleanup.py
-mathmodel/simplify.py
