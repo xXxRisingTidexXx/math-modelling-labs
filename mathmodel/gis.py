@@ -9,24 +9,29 @@ def main():
     layers = [
         Layer(
             'oblasts',
-            Style('#ebf2e7', '#b46198', 2),
-            Style('#fff', '#fff', 0)
+            outer_fill_color='#ebf2e7',
+            outer_line_color='#b46198',
+            outer_line_width=2
         ),
         Layer(
             'cities',
-            Style('#a1a0a0', '#656464', 1),
-            Style('#ebf2e7', '#ebf2e7', 0),
+            is_named=True,
+            outer_fill_color='#a1a0a0',
+            outer_line_color='#656464',
+            outer_line_width=1,
+            inner_fill_color='#ebf2e7',
+            inner_line_color='#ebf2e7'
         ),
         Layer(
             'rivers',
-            Style('#9fcee5', '#2a5eea', 1),
-            Style('#ebf2e7', '#2a5eea', 1)
+            outer_fill_color='#9fcee5',
+            outer_line_color='#2a5eea',
+            outer_line_width=1,
+            inner_fill_color='#ebf2e7',
+            inner_line_color='#2a5eea',
+            inner_line_width=1
         ),
-        Layer(
-            'roads',
-            Style('#ffb732', '#ffb732', 1),
-            Style('#fff', '#fff', 0)
-        )
+        Layer('roads', outer_line_color='#ffb732', outer_line_width=2)
     ]
     figure = Figure()
     for layer in layers:
@@ -50,13 +55,37 @@ def main():
 
 
 class Layer:
-    __slots__ = ['_path', '_outer_style', '_inner_style']
+    __slots__ = [
+        '_path',
+        '_is_named',
+        '_outer_fill_color',
+        '_outer_line_color',
+        '_outer_line_width',
+        '_inner_fill_color',
+        '_inner_line_color',
+        '_inner_line_width'
+    ]
     _root_dir = Path(__file__).parent.parent
 
-    def __init__(self, name: str, outer_style: 'Style', inner_style: 'Style'):
+    def __init__(
+        self,
+        name: str,
+        is_named: bool = False,
+        outer_fill_color: str = '#fff',
+        outer_line_color: str = '#fff',
+        outer_line_width: int = 0,
+        inner_fill_color: str = '#fff',
+        inner_line_color: str = '#fff',
+        inner_line_width: int = 0
+    ):
         self._path = self._root_dir / f'layers/{name}.geojson'
-        self._outer_style = outer_style
-        self._inner_style = inner_style
+        self._is_named = is_named
+        self._outer_fill_color = outer_fill_color
+        self._outer_line_color = outer_line_color
+        self._outer_line_width = outer_line_width
+        self._inner_fill_color = inner_fill_color
+        self._inner_line_color = inner_line_color
+        self._inner_line_width = inner_line_width
 
     def scatters(self) -> List[Scatter]:
         with open(self._path) as stream:
@@ -85,8 +114,8 @@ class Layer:
                     mode='lines',
                     hoverinfo='skip',
                     line={
-                        'color': self._style(0).line_color,
-                        'width': self._style(0).line_width
+                        'color': self._outer_line_color,
+                        'width': self._outer_line_width
                     }
                 )
             ]
@@ -103,31 +132,26 @@ class Layer:
                 mode='lines',
                 fill='toself',
                 hoverinfo='skip',
-                fillcolor=self._style(i).fill_color,
+                fillcolor=(
+                    self._outer_fill_color
+                    if i == 0 else
+                    self._inner_fill_color
+                ),
                 line={
-                    'color': self._style(i).line_color,
-                    'width': self._style(i).line_width
+                    'color': (
+                        self._outer_line_color
+                        if i == 0 else
+                        self._inner_line_color
+                    ),
+                    'width': (
+                        self._outer_line_width
+                        if i == 0 else
+                        self._inner_line_width
+                    )
                 }
             )
             for i, r in enumerate(map(array, coordinates))
         )
-
-    def _style(self, i: int) -> 'Style':
-        return self._outer_style if i == 0 else self._inner_style
-
-
-class Style:
-    __slots__ = ['fill_color', 'line_color', 'line_width']
-
-    def __init__(
-        self,
-        fill_color: str,
-        line_color: str,
-        line_width: int
-    ):
-        self.fill_color = fill_color
-        self.line_color = line_color
-        self.line_width = line_width
 
 
 if __name__ == '__main__':
