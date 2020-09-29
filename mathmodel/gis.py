@@ -21,6 +21,11 @@ def main():
             'rivers',
             Style('#9fcee5', '#2a5eea', 1),
             Style('#ebf2e7', '#2a5eea', 1)
+        ),
+        Layer(
+            'roads',
+            Style('#ffb732', '#ffb732', 1),
+            Style('#fff', '#fff', 0)
         )
     ]
     figure = Figure()
@@ -64,16 +69,30 @@ class Layer:
 
     def _flatten(self, geometry: Dict[str, Any]) -> Iterable[Scatter]:
         if geometry['type'] == 'Polygon':
-            return self._scatter(geometry['coordinates'])
+            return self._polygonize(geometry['coordinates'])
         if geometry['type'] == 'MultiPolygon':
             return (
                 s
                 for c in geometry['coordinates']
-                for s in self._scatter(c)
+                for s in self._polygonize(c)
             )
+        if geometry['type'] == 'LineString':
+            coordinates = array(geometry['coordinates'])
+            return [
+                Scatter(
+                    x=coordinates[:, 0],
+                    y=coordinates[:, 1],
+                    mode='lines',
+                    hoverinfo='skip',
+                    line={
+                        'color': self._style(0).line_color,
+                        'width': self._style(0).line_width
+                    }
+                )
+            ]
         return []
 
-    def _scatter(
+    def _polygonize(
         self,
         coordinates: List[List[List[float]]]
     ) -> Iterable[Scatter]:
