@@ -6,7 +6,7 @@ from shapely.geometry import shape, mapping
 
 def main():
     whitelist = {'relation/2081686', 'relation/7388499'}
-    for layer in ['oblasts', 'cities', 'rivers']:
+    for layer in ['oblasts', 'cities', 'rivers', 'roads']:
         with open(f'layers/{layer}.geojson') as stream:
             content = stream.read()
         collection = loads(content)
@@ -16,7 +16,11 @@ def main():
                 {**f, 'geometry': optimize(f['geometry'])}
                 for f in collection['features']
             )
-            if area(x['geometry']) >= 5e6 or x['id'] in whitelist
+            if (
+                area(x['geometry']) >= 5e6 or
+                x['id'] in whitelist or
+                x['geometry']['type'] == 'LineString'
+            )
         ]
         with open(f'layers/{layer}x.geojson', 'w+') as stream:
             stream.write(
