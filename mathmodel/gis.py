@@ -9,13 +9,18 @@ def main():
     layers = [
         Layer(
             'oblasts',
-            Style('#deeed5', '#b46198', 2),
+            Style('#ebf2e7', '#b46198', 2),
             Style('#fff', '#fff', 0)
+        ),
+        Layer(
+            'cities',
+            Style('#a1a0a0', '#656464', 1),
+            Style('#ebf2e7', '#ebf2e7', 0),
         ),
         Layer(
             'rivers',
             Style('#9fcee5', '#2a5eea', 1),
-            Style('#deeed5', '#2a5eea', 1)
+            Style('#ebf2e7', '#2a5eea', 1)
         )
     ]
     figure = Figure()
