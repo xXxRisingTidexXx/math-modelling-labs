@@ -1,0 +1,6743 @@
+{
+  "type": "FeatureCollection",
+  "generator": "overpass-ide",
+  "copyright": "The data included in this document is from www.openstreetmap.org. The data is made available under ODbL.",
+  "timestamp": "2020-09-29T19:06:03Z",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "relation/1752229",
+        "admin_level": "8",
+        "boundary": "administrative",
+        "int_name": "Magdalynivka",
+        "name": "Магдалинівка",
+        "name:de": "Mahdalyniwka",
+        "name:en": "Mahdalynivka",
+        "name:ru": "Магдалиновка",
+        "name:uk": "Магдалинівка",
+        "place": "town",
+        "type": "boundary"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              34.9015047,
+              48.8828787
+            ],
+            [
+              34.933058,
+              48.9207779
+            ],
+            [
+              34.9522998,
+              48.9194024
+            ],
+            [
+              34.9258833,
+              48.9443667
+            ],
+            [
+              34.9252781,
+              48.9301096
+            ],
+            [
+              34.8853516,
+              48.9337882
+            ],
+            [
+              34.9064882,
+              48.9162865
+            ],
+            [
+              34.9084001,
+              48.8971227
+            ],
+            [
+              34.8891884,
+              48.9007696
+            ],
+            [
+              34.9015047,
+              48.8828787
+            ]
+          ]
+        ]
+      },
+      "id": "relation/1752229"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "relation/1760273",
+        "admin_level": "8",
+        "boundary": "administrative",
+        "name": "Апостолове",
+        "name:lt": "Apostolovė",
+        "name:ru": "Апостолово",
+        "name:uk": "Апостолове",
+        "place": "town",
+        "population": "16356",
+        "type": "boundary",
+        "wikidata": "Q475572",
+        "wikipedia": "uk:Апостолове",
+        "wikipedia:ru": "Апостолово"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              33.6930465,
+              47.6474009
+            ],
+            [
+              33.6998118,
+              47.6388632
+            ],
+            [
+              33.7511376,
+              47.6429196
+            ],
+            [
+              33.7476159,
+              47.6664026
+            ],
+            [
+              33.7145573,
+              47.6855777
+            ],
+            [
+              33.6792847,
+              47.671343
+            ],
+            [
+              33.6930465,
+              47.6474009
+            ]
+          ]
+        ]
+      },
+      "id": "relation/1760273"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "relation/2033368",
+        "admin_level": "8",
+        "boundary": "administrative",
+        "name": "Зеленодольськ",
+        "name:en": "Zelenodolsk",
+        "name:ru": "Зеленодольск",
+        "place": "town",
+        "type": "boundary",
+        "wikidata": "Q640713",
+        "wikipedia": "uk:Зеленодольськ",
+        "wikipedia:ru": "Зеленодольск (Днепропетровская область)"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              33.6517617,
+              47.5783133
+            ],
+            [
+              33.6339578,
+              47.5638878
+            ],
+            [
+              33.6546188,
+              47.5370719
+            ],
+            [
+              33.6693088,
+              47.5377351
+            ],
+            [
+              33.6517617,
+              47.5783133
+            ]
+          ]
+        ]
+      },
+      "id": "relation/2033368"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "relation/2033405",
+        "boundary": "administrative",
+        "name": "Покров",
+        "name:en": "Pokrov",
+        "name:ru": "Покров",
+        "name:uk": "Покров",
+        "old_name": "Орджонікідзе",
+        "old_name:be": "Арджанікідзэ",
+        "old_name:ru": "Орджоникидзе",
+        "old_name:uk": "Орджонікідзе",
+        "place": "town",
+        "type": "boundary"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              34.0423983,
+              47.6849393
+            ],
+            [
+              34.0338104,
+              47.6858358
+            ],
+            [
+              34.0447772,
+              47.6625875
+            ],
+            [
+              34.0728191,
+              47.640713
+            ],
+            [
+              34.065842,
+              47.6216958
+            ],
+            [
+              34.0873957,
+              47.6197087
+            ],
+            [
+              34.0759474,
+              47.6411323
+            ],
+            [
+              34.0980424,
+              47.6509607
+            ],
+            [
+              34.1364637,
+              47.641212
+            ],
+            [
+              34.117809,
+              47.6727353
+            ],
+            [
+              34.0794816,
+              47.6693759
+            ],
+            [
+              34.0423983,
+              47.6849393
+            ]
+          ]
+        ]
+      },
+      "id": "relation/2033405"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "relation/2033437",
+        "admin_level": "8",
+        "boundary": "administrative",
+        "name": "Широке",
+        "name:pl": "Szyroke",
+        "name:ru": "Широкое",
+        "name:uk": "Широке",
+        "place": "town",
+        "population": "10222",
+        "type": "boundary",
+        "wikidata": "Q1001092",
+        "wikipedia": "uk:Широке (Широківський район)",
+        "wikipedia:ru": "Широкое (Широковский район)"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              33.2455855,
+              47.7033605
+            ],
+            [
+              33.2390295,
+              47.688249
+            ],
+            [
+              33.2575941,
+              47.6763172
+            ],
+            [
+              33.2427406,
+              47.6700939
+            ],
+            [
+              33.2744166,
+              47.6680769
+            ],
+            [
+              33.2894982,
+              47.7032293
+            ],
+            [
+              33.2455855,
+              47.7033605
+            ]
+          ]
+        ]
+      },
+      "id": "relation/2033437"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "relation/2090902",
+        "admin_level": "8",
+        "boundary": "administrative",
+        "name": "Капітанівка",
+        "name:en": "Kapitanivka",
+        "name:pl": "Kapitaniwka",
+        "name:ru": "Капитановка",
+        "place": "town",
+        "type": "boundary",
+        "wikidata": "Q4212971",
+        "wikipedia": "uk:Капітанівка (смт)"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              31.6896043,
+              48.8963911
+            ],
+            [
+              31.7257758,
+              48.9033698
+            ],
+            [
+              31.7258128,
+              48.915897
+            ],
+            [
+              31.7406208,
+              48.9176937
+            ],
+            [
+              31.7061742,
+              48.9319038
+            ],
+            [
+              31.7103501,
+              48.9194935
+            ],
+            [
+              31.6896043,
+              48.8963911
+            ]
+          ]
+        ]
+      },
+      "id": "relation/2090902"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "relation/2098801",
+        "name": "Лубни",
+        "name:en": "Lubny",
+        "name:eo": "Lubni",
+        "name:pl": "Łubnie",
+        "name:ru": "Лубны",
+        "place": "town",
+        "population": "47827",
+        "type": "multipolygon",
+        "wikidata": "Q269517",
+        "wikipedia": "uk:Лубни"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              32.9686324,
+              50.0525792
+            ],
+            [
+              32.9350122,
+              50.0398985
+            ],
+            [
+              32.9892387,
+              49.975343
+            ],
+            [
+              33.0125709,
+              49.9791359
+            ],
+            [
+              33.0029345,
+              49.9880865
+            ],
+            [
+              33.0141141,
+              50.0076904
+            ],
+            [
+              33.0568477,
+              50.0168652
+            ],
+            [
+              33.0378466,
+              50.0308776
+            ],
+            [
+              32.9822706,
+              50.037061
+            ],
+            [
+              32.9686324,
+              50.0525792
+            ]
+          ]
+        ]
+      },
+      "id": "relation/2098801"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "relation/2320570",
+        "admin_level": "9",
+        "boundary": "administrative",
+        "name": "Олександрія",
+        "name:be": "Александрыя",
+        "name:de": "Olexandrija",
+        "name:en": "Oleksandriia",
+        "name:eo": "Oleksandrija",
+        "name:pl": "Aleksandria",
+        "name:ru": "Александрия",
+        "name:uk": "Олександрія",
+        "place": "town",
+        "population": "82187",
+        "type": "boundary",
+        "wikidata": "Q156734",
+        "wikipedia": "uk:Олександрія"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              33.0918862,
+              48.6326188
+            ],
+            [
+              33.0911098,
+              48.6464623
+            ],
+            [
+              33.103386,
+              48.6505429
+            ],
+            [
+              33.1330291,
+              48.6351316
+            ],
+            [
+              33.1594597,
+              48.6763483
+            ],
+            [
+              33.1983562,
+              48.6671483
+            ],
+            [
+              33.1700202,
+              48.675902
+            ],
+            [
+              33.2061026,
+              48.6787104
+            ],
+            [
+              33.2039139,
+              48.6876996
+            ],
+            [
+              33.1437138,
+              48.6783426
+            ],
+            [
+              33.1503475,
+              48.684804
+            ],
+            [
+              33.1348603,
+              48.6934313
+            ],
+            [
+              33.1463726,
+              48.705807
+            ],
+            [
+              33.1191726,
+              48.715991
+            ],
+            [
+              33.0785344,
+              48.6870554
+            ],
+            [
+              33.0892505,
+              48.6780034
+            ],
+            [
+              33.0603257,
+              48.6735694
+            ],
+            [
+              33.0401287,
+              48.6513404
+            ],
+            [
+              33.005765,
+              48.6395853
+            ],
+            [
+              33.0916123,
+              48.6155892
+            ],
+            [
+              33.0918862,
+              48.6326188
+            ]
+          ]
+        ]
+      },
+      "id": "relation/2320570"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "relation/2320611",
+        "admin_level": "9",
+        "boundary": "administrative",
+        "name": "Голованівськ",
+        "name:en": "Holovanivsk",
+        "name:pl": "Hołowaniwśk",
+        "name:ru": "Голованевск",
+        "name:uk": "Голованівськ",
+        "place": "town",
+        "type": "boundary",
+        "wikidata": "Q2429530",
+        "wikipedia": "en:Holovanivsk",
+        "wikipedia:pl": "Hołowaniwśk"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              30.4788541,
+              48.3897244
+            ],
+            [
+              30.4496319,
+              48.4072133
+            ],
+            [
+              30.4286851,
+              48.3827056
+            ],
+            [
+              30.4119553,
+              48.3826099
+            ],
+            [
+              30.4510762,
+              48.3788514
+            ],
+            [
+              30.4751506,
+              48.3588385
+            ],
+            [
+              30.4788541,
+              48.3897244
+            ]
+          ]
+        ]
+      },
+      "id": "relation/2320611"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "relation/2328879",
+        "admin_level": "8",
+        "boundary": "administrative",
+        "name": "Новомиргород",
+        "name:de": "Nowomyrhorod",
+        "name:en": "Novomyrhorod",
+        "name:pl": "Nowomyrhorod",
+        "name:prefix": "місто",
+        "name:ru": "Новомиргород",
+        "name:uk": "Новомиргород",
+        "place": "town",
+        "type": "boundary",
+        "wikidata": "Q997478",
+        "wikipedia": "ru:Новомиргород",
+        "wikipedia:pl": "Nowomyrhorod"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              31.6524707,
+              48.8279249
+            ],
+            [
+              31.6451949,
+              48.8342715
+            ],
+            [
+              31.6389739,
+              48.8317442
+            ],
+            [
+              31.636291,
+              48.811286
+            ],
+            [
+              31.6468257,
+              48.8051671
+            ],
+            [
+              31.6377158,
+              48.7879613
+            ],
+            [
+              31.6084604,
+              48.7773049
+            ],
+            [
+              31.5903072,
+              48.789732
+            ],
+            [
+              31.5754886,
+              48.7776824
+            ],
+            [
+              31.6320424,
+              48.7677593
+            ],
+            [
+              31.6780037,
+              48.7790158
+            ],
+            [
+              31.679687,
+              48.8051635
+            ],
+            [
+              31.6598719,
+              48.7978318
+            ],
+            [
+              31.6540354,
+              48.8114839
+            ],
+            [
+              31.6660024,
+              48.8130375
+            ],
+            [
+              31.6524707,
+              48.8279249
+            ]
+          ]
+        ]
+      },
+      "id": "relation/2328879"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "relation/2328971",
+        "admin_level": "9",
+        "boundary": "administrative",
+        "name": "Знам’янка",
+        "name:eo": "Znamjanka",
+        "name:pl": "Znamianka",
+        "name:ru": "Знаменка",
+        "name:uk": "Знам’янка",
+        "place": "town",
+        "population": "23201",
+        "type": "boundary",
+        "wikidata": "Q592145",
+        "wikipedia": "uk:Знам'янка"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              32.6801502,
+              48.6880433
+            ],
+            [
+              32.6726709,
+              48.6939885
+            ],
+            [
+              32.6892241,
+              48.7052192
+            ],
+            [
+              32.7231931,
+              48.7075779
+            ],
+            [
+              32.7074057,
+              48.7130157
+            ],
+            [
+              32.7107166,
+              48.7258433
+            ],
+            [
+              32.6729886,
+              48.7244508
+            ],
+            [
+              32.6845563,
+              48.7352207
+            ],
+            [
+              32.6729469,
+              48.7400891
+            ],
+            [
+              32.66513,
+              48.7251324
+            ],
+            [
+              32.6124863,
+              48.719791
+            ],
+            [
+              32.6424662,
+              48.7178791
+            ],
+            [
+              32.6514716,
+              48.7056063
+            ],
+            [
+              32.6410744,
+              48.6976224
+            ],
+            [
+              32.6801502,
+              48.6880433
+            ]
+          ]
+        ]
+      },
+      "id": "relation/2328971"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "relation/2360982",
+        "admin_level": "6",
+        "boundary": "administrative",
+        "koatuu": "1210200000",
+        "name": "Вільногірськ",
+        "name:de": "Wilnohirsk",
+        "name:en": "Vilnohirsk",
+        "name:pl": "Wilnohirsk",
+        "name:ru": "Вольногорск",
+        "name:uk": "Вільногірськ",
+        "place": "town",
+        "type": "boundary",
+        "wikidata": "Q577225",
+        "wikipedia": "uk:Вільногірськ"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              34.0092254,
+              48.4833825
+            ],
+            [
+              34.0079092,
+              48.4642713
+            ],
+            [
+              34.0232943,
+              48.4609548
+            ],
+            [
+              34.0357389,
+              48.4744047
+            ],
+            [
+              34.0884876,
+              48.4844186
+            ],
+            [
+              34.0714758,
+              48.5064684
+            ],
+            [
+              33.9969774,
+              48.5183443
+            ],
+            [
+              34.0204176,
+              48.5074592
+            ],
+            [
+              34.0179601,
+              48.4981913
+            ],
+            [
+              33.9921455,
+              48.5045828
+            ],
+            [
+              34.0092254,
+              48.4833825
+            ]
+          ]
+        ]
+      },
+      "id": "relation/2360982"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "relation/2396441",
+        "admin_level": "8",
+        "boundary": "administrative",
+        "name": "Білики",
+        "name:en": "Bilyky",
+        "name:pl": "Bilyky",
+        "name:ru": "Белики",
+        "name:uk": "Білики",
+        "place": "town",
+        "type": "boundary"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              34.2506729,
+              49.2449263
+            ],
+            [
+              34.2628731,
+              49.2378781
+            ],
+            [
+              34.2507292,
+              49.2321066
+            ],
+            [
+              34.2576445,
+              49.225116
+            ],
+            [
+              34.280277,
+              49.2283878
+            ],
+            [
+              34.2821418,
+              49.2639344
+            ],
+            [
+              34.2593293,
+              49.2791028
+            ],
+            [
+              34.2506729,
+              49.2449263
+            ]
+          ]
+        ]
+      },
+      "id": "relation/2396441"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "relation/2409740",
+        "admin_level": "8",
+        "boundary": "administrative",
+        "name": "Васильківка",
+        "name:en": "Vasylkivka",
+        "name:ru": "Васильковка",
+        "place": "town",
+        "type": "boundary"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              36.0239274,
+              48.1836472
+            ],
+            [
+              36.0427206,
+              48.1706596
+            ],
+            [
+              36.0505775,
+              48.2011473
+            ],
+            [
+              36.0780685,
+              48.2078967
+            ],
+            [
+              36.0416967,
+              48.2094404
+            ],
+            [
+              35.9859596,
+              48.237212
+            ],
+            [
+              36.0239274,
+              48.1836472
+            ]
+          ]
+        ]
+      },
+      "id": "relation/2409740"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "relation/2414782",
+        "admin_level": "8",
+        "boundary": "administrative",
+        "name": "Велика Багачка",
+        "name:en": "Velyka Bahachka",
+        "name:pl": "Wełyka Bahaczka",
+        "name:ru": "Великая Багачка",
+        "name:uk": "Велика Багачка",
+        "place": "town",
+        "type": "boundary"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              33.693231,
+              49.8023439
+            ],
+            [
+              33.7284136,
+              49.7710654
+            ],
+            [
+              33.7397647,
+              49.7755137
+            ],
+            [
+              33.7433481,
+              49.7575725
+            ],
+            [
+              33.7524676,
+              49.7599429
+            ],
+            [
+              33.7396574,
+              49.780696
+            ],
+            [
+              33.7642801,
+              49.8098254
+            ],
+            [
+              33.693231,
+              49.8023439
+            ]
+          ]
+        ]
+      },
+      "id": "relation/2414782"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "relation/2425504",
+        "admin_level": "8",
+        "boundary": "administrative",
+        "name": "Верхівцеве",
+        "name:en": "Verkhivtseve",
+        "name:pl": "Werchiwcewo",
+        "name:ru": "Верховцево",
+        "name:uk": "Верхівцеве",
+        "place": "town",
+        "type": "boundary"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              34.2121249,
+              48.4819765
+            ],
+            [
+              34.2274135,
+              48.4615536
+            ],
+            [
+              34.2866014,
+              48.4834021
+            ],
+            [
+              34.2623952,
+              48.4853899
+            ],
+            [
+              34.2513109,
+              48.5077727
+            ],
+            [
+              34.2121249,
+              48.4819765
+            ]
+          ]
+        ]
+      },
+      "id": "relation/2425504"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "relation/2447698",
+        "admin_level": "9",
+        "boundary": "administrative",
+        "koatuu": "1221010100",
+        "name": "Верхньодніпровськ",
+        "name:de": "Werchnjodniprowsk",
+        "name:en": "Verkhnodniprovsk",
+        "name:pl": "Wierchniednieprowsk",
+        "name:prefix": "місто",
+        "name:ru": "Верхнеднепровск",
+        "name:uk": "Верхньодніпровськ",
+        "place": "town",
+        "population": "16680",
+        "postal_code": "51600",
+        "type": "boundary",
+        "wikidata": "Q639428",
+        "wikipedia": "uk:Верхньодніпровськ"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              34.3249914,
+              48.6631723
+            ],
+            [
+              34.3072761,
+              48.6591282
+            ],
+            [
+              34.3180451,
+              48.6358789
+            ],
+            [
+              34.340393,
+              48.6262638
+            ],
+            [
+              34.3465514,
+              48.6448391
+            ],
+            [
+              34.376839,
+              48.6536963
+            ],
+            [
+              34.3249914,
+              48.6631723
+            ]
+          ]
+        ]
+      },
+      "id": "relation/2447698"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "relation/2675202",
+        "admin_level": "8",
+        "boundary": "administrative",
+        "name": "Гребінка",
+        "name:en": "Hrebinka",
+        "name:eo": "Hrebinka",
+        "name:pl": "Hrebinka",
+        "name:ru": "Гребёнка",
+        "name:uk": "Гребінка",
+        "place": "town",
+        "population": "10990",
+        "type": "boundary",
+        "wikidata": "Q268814",
+        "wikipedia": "uk:Гребінка"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              32.4610369,
+              50.1428699
+            ],
+            [
+              32.4478565,
+              50.1282736
+            ],
+            [
+              32.4094649,
+              50.1277352
+            ],
+            [
+              32.4066808,
+              50.1162866
+            ],
+            [
+              32.4377918,
+              50.1027384
+            ],
+            [
+              32.4728864,
+              50.110075
+            ],
+            [
+              32.4610369,
+              50.1428699
+            ]
+          ]
+        ]
+      },
+      "id": "relation/2675202"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "relation/2692990",
+        "name": "Нове",
+        "name:pl": "Nowe",
+        "place": "town",
+        "type": "multipolygon",
+        "wikidata": "Q4323738",
+        "wikipedia": "uk:Нове (смт)"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              32.1039835,
+              48.5168755
+            ],
+            [
+              32.1235622,
+              48.5187552
+            ],
+            [
+              32.1608916,
+              48.5189359
+            ],
+            [
+              32.136478,
+              48.5195914
+            ],
+            [
+              32.1379428,
+              48.5465022
+            ],
+            [
+              32.1027454,
+              48.5426374
+            ],
+            [
+              32.1134693,
+              48.5197671
+            ],
+            [
+              32.1039835,
+              48.5168755
+            ]
+          ]
+        ]
+      },
+      "id": "relation/2692990"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "relation/2693667",
+        "admin_level": "8",
+        "boundary": "administrative",
+        "name": "Жовті Води",
+        "name:eo": "Ĵovti-Vodi",
+        "name:pl": "Żółte Wody",
+        "name:ru": "Жёлтые Воды",
+        "name:uk": "Жовті Води",
+        "place": "town",
+        "population": "46200",
+        "type": "boundary",
+        "wikidata": "Q639054",
+        "wikipedia": "uk:Жовті Води"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              33.4732864,
+              48.3302377
+            ],
+            [
+              33.5267891,
+              48.3275474
+            ],
+            [
+              33.5520987,
+              48.3341024
+            ],
+            [
+              33.5489493,
+              48.3469062
+            ],
+            [
+              33.5678424,
+              48.3539581
+            ],
+            [
+              33.5403405,
+              48.3540633
+            ],
+            [
+              33.5336462,
+              48.3827579
+            ],
+            [
+              33.4923779,
+              48.3953434
+            ],
+            [
+              33.4684699,
+              48.388193
+            ],
+            [
+              33.47321,
+              48.3675931
+            ],
+            [
+              33.4597453,
+              48.3576043
+            ],
+            [
+              33.4781858,
+              48.3492877
+            ],
+            [
+              33.4732864,
+              48.3302377
+            ]
+          ]
+        ]
+      },
+      "id": "relation/2693667"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "relation/2711899",
+        "admin_level": "9",
+        "boundary": "administrative",
+        "name": "Бобринець",
+        "name:de": "Bobrynez",
+        "name:en": "Bobrynets",
+        "name:lt": "Bobrinecas",
+        "name:pl": "Bobryniec",
+        "name:ru": "Бобринец",
+        "place": "town",
+        "type": "boundary",
+        "wikidata": "Q591884",
+        "wikipedia": "ru:Бобринец",
+        "wikipedia:pl": "Bobryniec"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              32.1868295,
+              48.0548796
+            ],
+            [
+              32.1680028,
+              48.0796334
+            ],
+            [
+              32.1380065,
+              48.0633758
+            ],
+            [
+              32.1379432,
+              48.0465487
+            ],
+            [
+              32.1762432,
+              48.0367722
+            ],
+            [
+              32.1868295,
+              48.0548796
+            ]
+          ]
+        ]
+      },
+      "id": "relation/2711899"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "relation/2711900",
+        "admin_level": "8",
+        "boundary": "administrative",
+        "name": "Добровеличківка",
+        "name:de": "Dobrowelytschkiwka",
+        "name:en": "Dobrovelychkivka",
+        "name:pl": "Dobrowełyczkiwka",
+        "name:ru": "Добровеличковка",
+        "place": "town",
+        "type": "boundary",
+        "wikidata": "Q1020100",
+        "wikipedia": "ru:Добровеличковка",
+        "wikipedia:pl": "Dobrowełyczkiwka"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              31.1580464,
+              48.400166
+            ],
+            [
+              31.155219,
+              48.3750017
+            ],
+            [
+              31.2009858,
+              48.3726681
+            ],
+            [
+              31.2023519,
+              48.3832332
+            ],
+            [
+              31.1580464,
+              48.400166
+            ]
+          ]
+        ]
+      },
+      "id": "relation/2711900"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "relation/2711901",
+        "admin_level": "9",
+        "boundary": "administrative",
+        "name": "Мала Виска",
+        "name:de": "Mala Wyska",
+        "name:en": "Mala Vyska",
+        "name:pl": "Mała Wyska",
+        "name:ru": "Малая Виска",
+        "place": "town",
+        "type": "boundary",
+        "wikidata": "Q591872",
+        "wikipedia": "pl:Mała Wyska"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              31.6579019,
+              48.6598937
+            ],
+            [
+              31.6136322,
+              48.6666442
+            ],
+            [
+              31.5952561,
+              48.6576719
+            ],
+            [
+              31.6406264,
+              48.6233642
+            ],
+            [
+              31.6647138,
+              48.6261253
+            ],
+            [
+              31.6473966,
+              48.6483895
+            ],
+            [
+              31.6579019,
+              48.6598937
+            ]
+          ]
+        ]
+      },
+      "id": "relation/2711901"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "relation/2721504",
+        "admin_level": "9",
+        "boundary": "administrative",
+        "name": "Компаніївка",
+        "name:de": "Kompanijiwka",
+        "name:en": "Kompaniivka",
+        "name:pl": "Kompanijiwka",
+        "name:ru": "Компанеевка",
+        "place": "town",
+        "type": "boundary",
+        "wikidata": "Q2473646",
+        "wikipedia": "pl:Kompanijiwka"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              32.2047648,
+              48.2327717
+            ],
+            [
+              32.2180459,
+              48.2507669
+            ],
+            [
+              32.2335271,
+              48.2505021
+            ],
+            [
+              32.1902984,
+              48.2732259
+            ],
+            [
+              32.1805357,
+              48.263295
+            ],
+            [
+              32.1940566,
+              48.2602907
+            ],
+            [
+              32.1948362,
+              48.2351806
+            ],
+            [
+              32.2047648,
+              48.2327717
+            ]
+          ]
+        ]
+      },
+      "id": "relation/2721504"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "relation/2721505",
+        "admin_level": "8",
+        "boundary": "administrative",
+        "name": "П’ятихатки",
+        "name:ru": "Пятихатки",
+        "place": "town",
+        "type": "boundary"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              33.6697923,
+              48.4027361
+            ],
+            [
+              33.7084793,
+              48.3905107
+            ],
+            [
+              33.7416839,
+              48.4162629
+            ],
+            [
+              33.6986524,
+              48.4338357
+            ],
+            [
+              33.6689648,
+              48.4196956
+            ],
+            [
+              33.6697923,
+              48.4027361
+            ]
+          ]
+        ]
+      },
+      "id": "relation/2721505"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "relation/2730953",
+        "admin_level": "8",
+        "boundary": "administrative",
+        "koatuu": "5322610100",
+        "name": "Лохвиця",
+        "name:eo": "Loĥvicja",
+        "name:pl": "Łochwica",
+        "name:ru": "Лохвица",
+        "place": "town",
+        "population": "11965",
+        "type": "boundary",
+        "wikidata": "Q269512",
+        "wikipedia": "uk:Лохвиця"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              33.1907271,
+              50.3167505
+            ],
+            [
+              33.1969928,
+              50.3094058
+            ],
+            [
+              33.2740687,
+              50.3284777
+            ],
+            [
+              33.2540702,
+              50.3420096
+            ],
+            [
+              33.2666444,
+              50.3471036
+            ],
+            [
+              33.2862567,
+              50.341544
+            ],
+            [
+              33.2999038,
+              50.3534019
+            ],
+            [
+              33.3336782,
+              50.3390515
+            ],
+            [
+              33.3405017,
+              50.3511292
+            ],
+            [
+              33.3315754,
+              50.363368
+            ],
+            [
+              33.2951831,
+              50.359453
+            ],
+            [
+              33.3022213,
+              50.3720455
+            ],
+            [
+              33.2417965,
+              50.3769721
+            ],
+            [
+              33.2219695,
+              50.3664341
+            ],
+            [
+              33.2410147,
+              50.3459836
+            ],
+            [
+              33.1907271,
+              50.3167505
+            ]
+          ]
+        ]
+      },
+      "id": "relation/2730953"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "relation/2730954",
+        "admin_level": "8",
+        "boundary": "administrative",
+        "name": "Заводське",
+        "name:eo": "Zavodske",
+        "name:pl": "Zawodskie",
+        "name:ru": "Заводское",
+        "name:uk": "Заводське",
+        "old_name": "Червонозаводське",
+        "old_name:eo": "Ĉervonosavodske",
+        "old_name:pl": "Czerwonozawodskie",
+        "old_name:ru": "Червонозаводское",
+        "old_name:uk": "Червонозаводське",
+        "place": "town",
+        "population": "8600",
+        "type": "boundary",
+        "wikidata": "Q2605724",
+        "wikipedia": "uk:Заводське"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              33.4235332,
+              50.396519
+            ],
+            [
+              33.3977155,
+              50.4194647
+            ],
+            [
+              33.3676117,
+              50.3950403
+            ],
+            [
+              33.3426008,
+              50.3939152
+            ],
+            [
+              33.3604513,
+              50.3822125
+            ],
+            [
+              33.4232811,
+              50.3860065
+            ],
+            [
+              33.4235332,
+              50.396519
+            ]
+          ]
+        ]
+      },
+      "id": "relation/2730954"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "relation/2741269",
+        "admin_level": "8",
+        "boundary": "administrative",
+        "name": "Карлівка",
+        "name:eo": "Karlivka",
+        "name:pl": "Karliwka",
+        "name:ru": "Карловка",
+        "place": "town",
+        "population": "15863",
+        "type": "boundary",
+        "wikidata": "Q218393",
+        "wikipedia": "uk:Карлівка"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              35.056218,
+              49.4350368
+            ],
+            [
+              35.1399216,
+              49.4309934
+            ],
+            [
+              35.1647912,
+              49.4466305
+            ],
+            [
+              35.1584197,
+              49.4741169
+            ],
+            [
+              35.1445461,
+              49.4843995
+            ],
+            [
+              35.1400244,
+              49.4747179
+            ],
+            [
+              35.1198307,
+              49.4779899
+            ],
+            [
+              35.056218,
+              49.4350368
+            ]
+          ]
+        ]
+      },
+      "id": "relation/2741269"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "relation/2741270",
+        "admin_level": "8",
+        "boundary": "administrative",
+        "name": "Котельва",
+        "place": "town",
+        "type": "boundary"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              34.7183097,
+              50.0578461
+            ],
+            [
+              34.7492122,
+              50.0248628
+            ],
+            [
+              34.7888704,
+              50.0335125
+            ],
+            [
+              34.8073383,
+              50.0511379
+            ],
+            [
+              34.782837,
+              50.1024649
+            ],
+            [
+              34.7173267,
+              50.094473
+            ],
+            [
+              34.7183097,
+              50.0578461
+            ]
+          ]
+        ]
+      },
+      "id": "relation/2741270"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "relation/2741271",
+        "admin_level": "8",
+        "boundary": "administrative",
+        "name": "Пирятин",
+        "name:eo": "Pirjatin",
+        "name:pl": "Pyriatyn",
+        "name:uk": "Пирятин",
+        "place": "town",
+        "population": "16146",
+        "type": "boundary",
+        "wikidata": "Q269523",
+        "wikipedia": "uk:Пирятин"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              32.5095524,
+              50.219627
+            ],
+            [
+              32.5294206,
+              50.2107369
+            ],
+            [
+              32.542193,
+              50.2190057
+            ],
+            [
+              32.5264329,
+              50.2338668
+            ],
+            [
+              32.5350972,
+              50.2545021
+            ],
+            [
+              32.4794793,
+              50.261091
+            ],
+            [
+              32.4576994,
+              50.2450274
+            ],
+            [
+              32.5008427,
+              50.2275581
+            ],
+            [
+              32.4937177,
+              50.2180021
+            ],
+            [
+              32.5095524,
+              50.219627
+            ]
+          ]
+        ]
+      },
+      "id": "relation/2741271"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "relation/2741272",
+        "admin_level": "8",
+        "boundary": "administrative",
+        "name": "Чорнухи",
+        "name:pl": "Czornuchy",
+        "place": "town",
+        "type": "boundary"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              32.928327,
+              50.2611092
+            ],
+            [
+              32.9762744,
+              50.2536063
+            ],
+            [
+              32.9779289,
+              50.2655581
+            ],
+            [
+              32.9539213,
+              50.2802407
+            ],
+            [
+              32.92029,
+              50.2803289
+            ],
+            [
+              32.928327,
+              50.2611092
+            ]
+          ]
+        ]
+      },
+      "id": "relation/2741272"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "relation/2741273",
+        "admin_level": "8",
+        "boundary": "administrative",
+        "name": "Чутове",
+        "name:pl": "Czutowe",
+        "place": "town",
+        "type": "boundary"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              35.1254496,
+              49.6985185
+            ],
+            [
+              35.1879591,
+              49.6917683
+            ],
+            [
+              35.1970514,
+              49.7043324
+            ],
+            [
+              35.1833096,
+              49.7195652
+            ],
+            [
+              35.2084167,
+              49.7396012
+            ],
+            [
+              35.1973613,
+              49.7442751
+            ],
+            [
+              35.1717376,
+              49.723907
+            ],
+            [
+              35.1415165,
+              49.7343157
+            ],
+            [
+              35.1663567,
+              49.7215172
+            ],
+            [
+              35.1254496,
+              49.6985185
+            ]
+          ]
+        ]
+      },
+      "id": "relation/2741273"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "relation/2741274",
+        "admin_level": "8",
+        "boundary": "administrative",
+        "name": "Шишаки",
+        "name:pl": "Szyszaki",
+        "place": "town",
+        "type": "boundary"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              33.9822167,
+              49.8591652
+            ],
+            [
+              34.0185985,
+              49.8591304
+            ],
+            [
+              34.0303983,
+              49.8808791
+            ],
+            [
+              33.9984468,
+              49.8963031
+            ],
+            [
+              33.9822167,
+              49.8591652
+            ]
+          ]
+        ]
+      },
+      "id": "relation/2741274"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "relation/2744605",
+        "admin_level": "8",
+        "boundary": "administrative",
+        "name": "Гайворон",
+        "name:en": "Haivoron",
+        "name:pl": "Hajworon",
+        "name:ru": "Гайворон",
+        "place": "town",
+        "type": "boundary",
+        "wikidata": "Q591848",
+        "wikipedia": "en:Haivoron",
+        "wikipedia:pl": "Hajworon"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              29.832708,
+              48.335148
+            ],
+            [
+              29.8559252,
+              48.3359753
+            ],
+            [
+              29.8827044,
+              48.3122055
+            ],
+            [
+              29.8814231,
+              48.3287518
+            ],
+            [
+              29.9260316,
+              48.3356513
+            ],
+            [
+              29.8957167,
+              48.3423907
+            ],
+            [
+              29.8840771,
+              48.3605306
+            ],
+            [
+              29.8351327,
+              48.3520557
+            ],
+            [
+              29.811548,
+              48.3752942
+            ],
+            [
+              29.7995345,
+              48.370369
+            ],
+            [
+              29.8144068,
+              48.3347999
+            ],
+            [
+              29.832708,
+              48.335148
+            ]
+          ]
+        ]
+      },
+      "id": "relation/2744605"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "relation/2744607",
+        "admin_level": "9",
+        "boundary": "administrative",
+        "name": "Олександрівка",
+        "name:ru": "Александровка",
+        "name:uk": "Олександрівка",
+        "place": "town",
+        "type": "boundary"
+      },
+      "geometry": {
+        "type": "MultiPolygon",
+        "coordinates": [
+          [
+            [
+              [
+                32.2544793,
+                48.9529996
+              ],
+              [
+                32.2436075,
+                48.9699911
+              ],
+              [
+                32.2538411,
+                48.9716548
+              ],
+              [
+                32.2071846,
+                48.989211
+              ],
+              [
+                32.2110994,
+                48.9530615
+              ],
+              [
+                32.2544793,
+                48.9529996
+              ]
+            ]
+          ]
+        ]
+      },
+      "id": "relation/2744607"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "relation/2751584",
+        "admin_level": "9",
+        "boundary": "administrative",
+        "name": "Козельщина",
+        "place": "town",
+        "type": "boundary"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              33.8734645,
+              49.2305553
+            ],
+            [
+              33.8561055,
+              49.2261704
+            ],
+            [
+              33.8179802,
+              49.2023338
+            ],
+            [
+              33.8593305,
+              49.2031568
+            ],
+            [
+              33.8734645,
+              49.2305553
+            ]
+          ]
+        ]
+      },
+      "id": "relation/2751584"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "relation/2751585",
+        "admin_level": "8",
+        "boundary": "administrative",
+        "name": "Машівка",
+        "place": "town",
+        "type": "boundary"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              34.850237,
+              49.4443727
+            ],
+            [
+              34.8390849,
+              49.4441027
+            ],
+            [
+              34.8707861,
+              49.4339199
+            ],
+            [
+              34.9337284,
+              49.4381229
+            ],
+            [
+              34.9423249,
+              49.4488841
+            ],
+            [
+              34.8960765,
+              49.4574446
+            ],
+            [
+              34.850237,
+              49.4443727
+            ]
+          ]
+        ]
+      },
+      "id": "relation/2751585"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "relation/2751586",
+        "admin_level": "8",
+        "boundary": "administrative",
+        "name": "Нові Санжари",
+        "place": "town",
+        "type": "boundary"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              34.3093677,
+              49.3507503
+            ],
+            [
+              34.2924119,
+              49.3367523
+            ],
+            [
+              34.316077,
+              49.3144784
+            ],
+            [
+              34.3381899,
+              49.3487501
+            ],
+            [
+              34.3093677,
+              49.3507503
+            ]
+          ]
+        ]
+      },
+      "id": "relation/2751586"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "relation/2762260",
+        "admin_level": "8",
+        "boundary": "administrative",
+        "name": "Долинська",
+        "name:ru": "Долинская",
+        "place": "town",
+        "type": "boundary"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              32.7537413,
+              48.1010146
+            ],
+            [
+              32.752544,
+              48.0810444
+            ],
+            [
+              32.7941813,
+              48.0895416
+            ],
+            [
+              32.7904133,
+              48.1321828
+            ],
+            [
+              32.7520645,
+              48.1430839
+            ],
+            [
+              32.7537413,
+              48.1010146
+            ]
+          ]
+        ]
+      },
+      "id": "relation/2762260"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "relation/2762261",
+        "admin_level": "9",
+        "boundary": "administrative",
+        "name": "Марганець",
+        "name:eo": "Marganec",
+        "name:pl": "Marganiec",
+        "name:ru": "Марганец",
+        "place": "town",
+        "population": "48144",
+        "type": "boundary"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              34.5718872,
+              47.665586
+            ],
+            [
+              34.5381531,
+              47.6504749
+            ],
+            [
+              34.5430683,
+              47.6383814
+            ],
+            [
+              34.5748026,
+              47.6446292
+            ],
+            [
+              34.6483894,
+              47.6106483
+            ],
+            [
+              34.6723118,
+              47.616457
+            ],
+            [
+              34.6893897,
+              47.6378801
+            ],
+            [
+              34.6604022,
+              47.6450888
+            ],
+            [
+              34.6572725,
+              47.6648382
+            ],
+            [
+              34.6357293,
+              47.6768161
+            ],
+            [
+              34.6339877,
+              47.6646975
+            ],
+            [
+              34.5718872,
+              47.665586
+            ]
+          ]
+        ]
+      },
+      "id": "relation/2762261"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "relation/2762262",
+        "admin_level": "8",
+        "boundary": "administrative",
+        "name": "Опішня",
+        "place": "town",
+        "type": "boundary"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              34.5798112,
+              49.9614995
+            ],
+            [
+              34.6077639,
+              49.9366803
+            ],
+            [
+              34.6373087,
+              49.9610792
+            ],
+            [
+              34.619026,
+              49.9713294
+            ],
+            [
+              34.6278193,
+              49.98609
+            ],
+            [
+              34.5798112,
+              49.9614995
+            ]
+          ]
+        ]
+      },
+      "id": "relation/2762262"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "relation/2762263",
+        "admin_level": "8",
+        "boundary": "administrative",
+        "name": "Побузьке",
+        "name:en": "Pobuzke",
+        "name:pl": "Pobuźke",
+        "name:ru": "Побугское",
+        "place": "town",
+        "type": "boundary",
+        "wikidata": "Q4366291",
+        "wikipedia": "uk:Побузьке"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              30.579936,
+              48.1752408
+            ],
+            [
+              30.578155,
+              48.1516267
+            ],
+            [
+              30.6223662,
+              48.1491365
+            ],
+            [
+              30.6188323,
+              48.1804519
+            ],
+            [
+              30.579936,
+              48.1752408
+            ]
+          ]
+        ]
+      },
+      "id": "relation/2762263"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "relation/2762265",
+        "admin_level": "8",
+        "boundary": "administrative",
+        "name": "Покровське",
+        "place": "town",
+        "type": "boundary"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              36.2822012,
+              47.9902458
+            ],
+            [
+              36.2639809,
+              48.0072534
+            ],
+            [
+              36.1908921,
+              47.9774503
+            ],
+            [
+              36.2131314,
+              47.9578361
+            ],
+            [
+              36.2482212,
+              47.9857941
+            ],
+            [
+              36.2822012,
+              47.9902458
+            ]
+          ]
+        ]
+      },
+      "id": "relation/2762265"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "relation/2762267",
+        "admin_level": "9",
+        "boundary": "administrative",
+        "name": "Солоне",
+        "name:de": "Solone",
+        "name:en": "Solone",
+        "name:prefix": "селище міського типу",
+        "name:ru": "Солёное",
+        "name:uk": "Солоне",
+        "place": "town",
+        "postal_code": "52400-52404",
+        "type": "boundary"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              34.8306102,
+              48.2040407
+            ],
+            [
+              34.8564419,
+              48.1899448
+            ],
+            [
+              34.899399,
+              48.2018169
+            ],
+            [
+              34.8834345,
+              48.2243918
+            ],
+            [
+              34.8306102,
+              48.2040407
+            ]
+          ]
+        ]
+      },
+      "id": "relation/2762267"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "relation/2762268",
+        "admin_level": "9",
+        "boundary": "administrative",
+        "name": "Томаківка",
+        "place": "town",
+        "type": "boundary"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              34.7232386,
+              47.8092745
+            ],
+            [
+              34.7615205,
+              47.7883462
+            ],
+            [
+              34.7729238,
+              47.797387
+            ],
+            [
+              34.7575435,
+              47.8028192
+            ],
+            [
+              34.7562271,
+              47.8171318
+            ],
+            [
+              34.7828556,
+              47.8272351
+            ],
+            [
+              34.7117685,
+              47.8274127
+            ],
+            [
+              34.7232386,
+              47.8092745
+            ]
+          ]
+        ]
+      },
+      "id": "relation/2762268"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "relation/2762269",
+        "admin_level": "9",
+        "boundary": "administrative",
+        "name": "Устинівка",
+        "place": "town",
+        "type": "boundary"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              32.5210267,
+              47.9630497
+            ],
+            [
+              32.515871,
+              47.9509107
+            ],
+            [
+              32.5312881,
+              47.9102086
+            ],
+            [
+              32.5409023,
+              47.9480217
+            ],
+            [
+              32.570446,
+              47.9782638
+            ],
+            [
+              32.5210267,
+              47.9630497
+            ]
+          ]
+        ]
+      },
+      "id": "relation/2762269"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "relation/2768362",
+        "admin_level": "9",
+        "boundary": "administrative",
+        "name": "Єлизаветградка",
+        "name:en": "Yelyzavethradka",
+        "name:pl": "Jełyzawethradka",
+        "name:ru": "Елизаветградка",
+        "place": "town",
+        "type": "boundary",
+        "wikidata": "Q4174790",
+        "wikipedia": "ru:Елизаветградка",
+        "wikipedia:pl": "Jełyzawethradka"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              32.4073942,
+              48.8111593
+            ],
+            [
+              32.3814592,
+              48.7944726
+            ],
+            [
+              32.4042941,
+              48.7941753
+            ],
+            [
+              32.4012532,
+              48.7795638
+            ],
+            [
+              32.4174082,
+              48.773186
+            ],
+            [
+              32.4245935,
+              48.8006823
+            ],
+            [
+              32.4073942,
+              48.8111593
+            ]
+          ]
+        ]
+      },
+      "id": "relation/2768362"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "relation/2773262",
+        "admin_level": "9",
+        "boundary": "administrative",
+        "name": "Власівка",
+        "place": "town",
+        "type": "boundary"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              33.2750871,
+              49.1327726
+            ],
+            [
+              33.2684225,
+              49.1132364
+            ],
+            [
+              33.2868931,
+              49.09645
+            ],
+            [
+              33.3043011,
+              49.118343
+            ],
+            [
+              33.2750871,
+              49.1327726
+            ]
+          ]
+        ]
+      },
+      "id": "relation/2773262"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "relation/2773265",
+        "admin_level": "8",
+        "boundary": "administrative",
+        "name": "Кобеляки",
+        "name:eo": "Kobeljaki",
+        "name:pl": "Kobelaky",
+        "name:ru": "Кобеляки",
+        "place": "town",
+        "population": "10379",
+        "type": "boundary",
+        "wikidata": "Q269538",
+        "wikipedia": "uk:Кобеляки"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              34.1639747,
+              49.1486083
+            ],
+            [
+              34.1747335,
+              49.1281536
+            ],
+            [
+              34.2019985,
+              49.1269802
+            ],
+            [
+              34.2440225,
+              49.1494659
+            ],
+            [
+              34.1958376,
+              49.1677472
+            ],
+            [
+              34.1443883,
+              49.1550893
+            ],
+            [
+              34.1639747,
+              49.1486083
+            ]
+          ]
+        ]
+      },
+      "id": "relation/2773265"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "relation/2783508",
+        "admin_level": "9",
+        "boundary": "administrative",
+        "name": "Вільшанка",
+        "place": "town",
+        "type": "boundary"
+      },
+      "geometry": {
+        "type": "MultiPolygon",
+        "coordinates": [
+          [
+            [
+              [
+                30.8631785,
+                48.217899
+              ],
+              [
+                30.9019171,
+                48.2184693
+              ],
+              [
+                30.9154194,
+                48.2263704
+              ],
+              [
+                30.8949317,
+                48.2275673
+              ],
+              [
+                30.9083621,
+                48.2319418
+              ],
+              [
+                30.8933337,
+                48.2312279
+              ],
+              [
+                30.8569783,
+                48.2647822
+              ],
+              [
+                30.846124,
+                48.2266548
+              ],
+              [
+                30.8656793,
+                48.2297149
+              ],
+              [
+                30.8631785,
+                48.217899
+              ]
+            ]
+          ]
+        ]
+      },
+      "id": "relation/2783508"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "relation/2788850",
+        "admin_level": "8",
+        "boundary": "administrative",
+        "name": "Завалля",
+        "name:en": "Zavallia",
+        "name:pl": "Zawale",
+        "place": "town",
+        "type": "boundary",
+        "wikidata": "Q4182898",
+        "wikipedia": "pl:Zawale (rejon kamieniecki)"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              30.0359658,
+              48.1694153
+            ],
+            [
+              30.055367,
+              48.1593155
+            ],
+            [
+              30.0296729,
+              48.1929882
+            ],
+            [
+              30.0607373,
+              48.1921269
+            ],
+            [
+              30.0590765,
+              48.2119604
+            ],
+            [
+              30.0251051,
+              48.2196982
+            ],
+            [
+              30.0048646,
+              48.2436601
+            ],
+            [
+              29.9998747,
+              48.2421365
+            ],
+            [
+              30.0085115,
+              48.229961
+            ],
+            [
+              29.9905643,
+              48.225454
+            ],
+            [
+              30.0103417,
+              48.2085044
+            ],
+            [
+              30.002348,
+              48.1850581
+            ],
+            [
+              30.0234408,
+              48.1854806
+            ],
+            [
+              30.0359658,
+              48.1694153
+            ]
+          ]
+        ]
+      },
+      "id": "relation/2788850"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "relation/2788851",
+        "admin_level": "8",
+        "boundary": "administrative",
+        "name": "Межова",
+        "place": "town",
+        "type": "boundary"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              36.7511183,
+              48.2624163
+            ],
+            [
+              36.7152083,
+              48.2673312
+            ],
+            [
+              36.6932596,
+              48.2844835
+            ],
+            [
+              36.7206088,
+              48.2427067
+            ],
+            [
+              36.6983116,
+              48.2326266
+            ],
+            [
+              36.7464418,
+              48.2293069
+            ],
+            [
+              36.7511183,
+              48.2624163
+            ]
+          ]
+        ]
+      },
+      "id": "relation/2788851"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "relation/2788852",
+        "admin_level": "9",
+        "boundary": "administrative",
+        "name": "Новгородка",
+        "place": "town",
+        "type": "boundary"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              32.5771957,
+              48.3590622
+            ],
+            [
+              32.5742497,
+              48.355352
+            ],
+            [
+              32.6086486,
+              48.351597
+            ],
+            [
+              32.6483856,
+              48.3557253
+            ],
+            [
+              32.6625053,
+              48.3289052
+            ],
+            [
+              32.6683474,
+              48.3380554
+            ],
+            [
+              32.7001434,
+              48.3316464
+            ],
+            [
+              32.7220287,
+              48.3361406
+            ],
+            [
+              32.6754806,
+              48.3436624
+            ],
+            [
+              32.6656179,
+              48.3627653
+            ],
+            [
+              32.6857589,
+              48.3677126
+            ],
+            [
+              32.6794679,
+              48.379704
+            ],
+            [
+              32.5771957,
+              48.3590622
+            ]
+          ]
+        ]
+      },
+      "id": "relation/2788852"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "relation/2788853",
+        "addr:postcode": "28300",
+        "admin_level": "9",
+        "boundary": "administrative",
+        "koatuu": "3524955100",
+        "name": "Петрове",
+        "name:de": "Petrowe",
+        "name:en": "Petrove",
+        "name:pl": "Petrowe",
+        "name:prefix": "селище міського типу",
+        "name:ru": "Петрово",
+        "name:uk": "Петрове",
+        "place": "town",
+        "population": "7224",
+        "type": "boundary",
+        "wikidata": "Q1026907",
+        "wikipedia": "uk:Петрове (смт)",
+        "wikipedia:ru": "Петрово (Петровский район)"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              33.3035899,
+              48.3109652
+            ],
+            [
+              33.3142316,
+              48.3159788
+            ],
+            [
+              33.2879144,
+              48.3279513
+            ],
+            [
+              33.2929882,
+              48.3432763
+            ],
+            [
+              33.2810855,
+              48.3518972
+            ],
+            [
+              33.3030352,
+              48.3912569
+            ],
+            [
+              33.2724455,
+              48.3497925
+            ],
+            [
+              33.2350468,
+              48.3566437
+            ],
+            [
+              33.2480928,
+              48.3426956
+            ],
+            [
+              33.2434718,
+              48.3267049
+            ],
+            [
+              33.2801483,
+              48.3131881
+            ],
+            [
+              33.2760603,
+              48.3014358
+            ],
+            [
+              33.2926633,
+              48.2976237
+            ],
+            [
+              33.3035899,
+              48.3109652
+            ]
+          ]
+        ]
+      },
+      "id": "relation/2788853"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "relation/2788854",
+        "admin_level": "8",
+        "boundary": "administrative",
+        "name": "Благовіщенське",
+        "name:en": "Blahovishchenske",
+        "name:pl": "Błahowiszczenśke",
+        "name:ru": "Благовещенское",
+        "place": "town",
+        "type": "boundary",
+        "wikidata": "Q1020103",
+        "wikipedia": "en:Blahovishchenske",
+        "wikipedia:pl": "Błahowiszczenśke"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              30.2420282,
+              48.3133905
+            ],
+            [
+              30.2538087,
+              48.3197821
+            ],
+            [
+              30.2441974,
+              48.3444535
+            ],
+            [
+              30.2143956,
+              48.338309
+            ],
+            [
+              30.219941,
+              48.3152077
+            ],
+            [
+              30.2420282,
+              48.3133905
+            ]
+          ]
+        ]
+      },
+      "id": "relation/2788854"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "relation/2814086",
+        "admin_level": "9",
+        "boundary": "administrative",
+        "name": "Онуфріївка",
+        "place": "town",
+        "type": "boundary"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              33.4610071,
+              48.9062791
+            ],
+            [
+              33.4681453,
+              48.9139634
+            ],
+            [
+              33.4256546,
+              48.9148127
+            ],
+            [
+              33.4118452,
+              48.8993985
+            ],
+            [
+              33.457038,
+              48.8822679
+            ],
+            [
+              33.4610071,
+              48.9062791
+            ]
+          ]
+        ]
+      },
+      "id": "relation/2814086"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "relation/2825887",
+        "admin_level": "9",
+        "boundary": "administrative",
+        "name": "Новоукраїнка",
+        "name:de": "Nowoukrajinka",
+        "name:en": "Novoukrainka",
+        "name:pl": "Nowoukrainka",
+        "name:ru": "Новоукраинка",
+        "place": "town",
+        "type": "boundary",
+        "wikidata": "Q591863",
+        "wikipedia": "pl:Nowoukrainka"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              31.5570099,
+              48.3075962
+            ],
+            [
+              31.5421555,
+              48.3446715
+            ],
+            [
+              31.4800332,
+              48.3408691
+            ],
+            [
+              31.514278,
+              48.3047297
+            ],
+            [
+              31.5111653,
+              48.2806864
+            ],
+            [
+              31.5370046,
+              48.2932802
+            ],
+            [
+              31.5329033,
+              48.3073426
+            ],
+            [
+              31.5570099,
+              48.3075962
+            ]
+          ]
+        ]
+      },
+      "id": "relation/2825887"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "relation/3099567",
+        "admin_level": "6",
+        "boundary": "administrative",
+        "koatuu": "1213000000",
+        "name": "Синельникове",
+        "name:de": "Synelnykowe",
+        "name:en": "Synelnykove",
+        "name:pl": "Synelnykowe",
+        "name:ru": "Синельниково",
+        "name:uk": "Синельникове",
+        "place": "town",
+        "type": "boundary",
+        "wikidata": "Q640798",
+        "wikipedia": "uk:Синельникове",
+        "wikipedia:ru": "Синельниково"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              35.4749533,
+              48.3182536
+            ],
+            [
+              35.5018873,
+              48.3178519
+            ],
+            [
+              35.5058277,
+              48.2934138
+            ],
+            [
+              35.5272641,
+              48.2896476
+            ],
+            [
+              35.5232038,
+              48.3006416
+            ],
+            [
+              35.5534283,
+              48.3179894
+            ],
+            [
+              35.5446524,
+              48.3358709
+            ],
+            [
+              35.4664392,
+              48.3391372
+            ],
+            [
+              35.4792914,
+              48.327467
+            ],
+            [
+              35.4633364,
+              48.3181516
+            ],
+            [
+              35.4749533,
+              48.3182536
+            ]
+          ]
+        ]
+      },
+      "id": "relation/3099567"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "relation/3453937",
+        "admin_level": "9",
+        "boundary": "administrative",
+        "name": "Нова Прага",
+        "name:en": "Nova Praha",
+        "name:pl": "Nowa Praha",
+        "name:ru": "Новая Прага",
+        "place": "town",
+        "type": "boundary",
+        "wikidata": "Q4322265",
+        "wikipedia": "ru:Новая Прага",
+        "wikipedia:pl": "Nowa Praha"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              32.8297655,
+              48.5239213
+            ],
+            [
+              32.8726107,
+              48.5647442
+            ],
+            [
+              32.8884967,
+              48.5619083
+            ],
+            [
+              32.883123,
+              48.5383895
+            ],
+            [
+              32.9351864,
+              48.5233581
+            ],
+            [
+              32.9229227,
+              48.5496191
+            ],
+            [
+              32.934603,
+              48.5785684
+            ],
+            [
+              32.857514,
+              48.5807649
+            ],
+            [
+              32.8233272,
+              48.5167546
+            ],
+            [
+              32.8297655,
+              48.5239213
+            ]
+          ]
+        ]
+      },
+      "id": "relation/3453937"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "relation/3505757",
+        "admin_level": "6",
+        "boundary": "administrative",
+        "koatuu": "1211900000",
+        "name": "Новомосковськ",
+        "name:de": "Nowomoskowsk",
+        "name:en": "Novomoskovsk",
+        "name:eo": "Novomoskovsk",
+        "name:pl": "Nowomoskowsk",
+        "name:ru": "Новомосковск",
+        "name:uk": "Новомосковськ",
+        "place": "town",
+        "type": "boundary",
+        "wikidata": "Q640680",
+        "wikipedia": "uk:Новомосковськ"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              35.1735379,
+              48.59921
+            ],
+            [
+              35.2149216,
+              48.6134093
+            ],
+            [
+              35.2596778,
+              48.6112547
+            ],
+            [
+              35.2730342,
+              48.6256824
+            ],
+            [
+              35.26274,
+              48.6393611
+            ],
+            [
+              35.2705268,
+              48.6571821
+            ],
+            [
+              35.2942613,
+              48.6608443
+            ],
+            [
+              35.2883432,
+              48.6696901
+            ],
+            [
+              35.3100219,
+              48.6898445
+            ],
+            [
+              35.2965039,
+              48.6801796
+            ],
+            [
+              35.2973137,
+              48.6905025
+            ],
+            [
+              35.2842941,
+              48.6870892
+            ],
+            [
+              35.2697793,
+              48.6630251
+            ],
+            [
+              35.242494,
+              48.6510093
+            ],
+            [
+              35.1923465,
+              48.6565649
+            ],
+            [
+              35.1648903,
+              48.6131003
+            ],
+            [
+              35.1735379,
+              48.59921
+            ]
+          ]
+        ]
+      },
+      "id": "relation/3505757"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "relation/3509801",
+        "admin_level": "8",
+        "boundary": "administrative",
+        "name": "Іларіонове",
+        "name:en": "Ilarionove",
+        "name:pl": "Iłarionowe",
+        "name:ru": "Иларионово",
+        "name:uk": "Іларіонове",
+        "place": "town",
+        "type": "boundary"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              35.2977948,
+              48.4042298
+            ],
+            [
+              35.2895846,
+              48.4147537
+            ],
+            [
+              35.2673573,
+              48.4246763
+            ],
+            [
+              35.2416671,
+              48.4300113
+            ],
+            [
+              35.2592529,
+              48.4247683
+            ],
+            [
+              35.2528449,
+              48.4136128
+            ],
+            [
+              35.2672445,
+              48.4068824
+            ],
+            [
+              35.2536931,
+              48.4066062
+            ],
+            [
+              35.2692562,
+              48.3915942
+            ],
+            [
+              35.2977948,
+              48.4042298
+            ]
+          ]
+        ]
+      },
+      "id": "relation/3509801"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "relation/3511076",
+        "admin_level": "8",
+        "boundary": "administrative",
+        "name": "Перещепине",
+        "name:ru": "Перещепино",
+        "place": "town",
+        "type": "boundary"
+      },
+      "geometry": {
+        "type": "MultiPolygon",
+        "coordinates": [
+          [
+            [
+              [
+                35.3613574,
+                49.0303773
+              ],
+              [
+                35.3484645,
+                49.0235872
+              ],
+              [
+                35.3026532,
+                49.0241268
+              ],
+              [
+                35.3441604,
+                49.0100494
+              ],
+              [
+                35.3377665,
+                49.0030139
+              ],
+              [
+                35.3893646,
+                49.0032958
+              ],
+              [
+                35.3914959,
+                49.0173657
+              ],
+              [
+                35.3613574,
+                49.0303773
+              ]
+            ]
+          ]
+        ]
+      },
+      "id": "relation/3511076"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "relation/3513051",
+        "admin_level": "8",
+        "boundary": "administrative",
+        "name": "Гвардійське",
+        "place": "town",
+        "type": "boundary"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              35.2926151,
+              48.7271856
+            ],
+            [
+              35.3111877,
+              48.7175413
+            ],
+            [
+              35.351365,
+              48.7239556
+            ],
+            [
+              35.3388542,
+              48.7329154
+            ],
+            [
+              35.3513328,
+              48.7515808
+            ],
+            [
+              35.3429292,
+              48.7708589
+            ],
+            [
+              35.2926151,
+              48.7271856
+            ]
+          ]
+        ]
+      },
+      "id": "relation/3513051"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "relation/3513355",
+        "name": "Петриківка",
+        "place": "town",
+        "type": "multipolygon"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              34.5949083,
+              48.7353447
+            ],
+            [
+              34.6175759,
+              48.7141912
+            ],
+            [
+              34.6014552,
+              48.7122506
+            ],
+            [
+              34.6175872,
+              48.6977953
+            ],
+            [
+              34.6560105,
+              48.7193116
+            ],
+            [
+              34.6473927,
+              48.7383194
+            ],
+            [
+              34.6282266,
+              48.7365278
+            ],
+            [
+              34.613437,
+              48.7528483
+            ],
+            [
+              34.5949083,
+              48.7353447
+            ]
+          ]
+        ]
+      },
+      "id": "relation/3513355"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "relation/3513409",
+        "admin_level": "8",
+        "boundary": "administrative",
+        "name": "Курилівка",
+        "place": "town",
+        "type": "boundary"
+      },
+      "geometry": {
+        "type": "MultiPolygon",
+        "coordinates": [
+          [
+            [
+              [
+                34.6408034,
+                48.5781012
+              ],
+              [
+                34.5838539,
+                48.5864023
+              ],
+              [
+                34.5727536,
+                48.5723002
+              ],
+              [
+                34.6039632,
+                48.5611221
+              ],
+              [
+                34.6177179,
+                48.5696922
+              ],
+              [
+                34.5894041,
+                48.5738436
+              ],
+              [
+                34.6107199,
+                48.5766643
+              ],
+              [
+                34.6454687,
+                48.5577149
+              ],
+              [
+                34.6537537,
+                48.5671372
+              ],
+              [
+                34.6408034,
+                48.5781012
+              ]
+            ]
+          ]
+        ]
+      },
+      "id": "relation/3513409"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "relation/3521024",
+        "admin_level": "9",
+        "boundary": "administrative",
+        "name": "Лихівка",
+        "place": "town",
+        "type": "boundary"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              33.9268998,
+              48.6987315
+            ],
+            [
+              33.8989197,
+              48.695744
+            ],
+            [
+              33.9056404,
+              48.6837924
+            ],
+            [
+              33.8797642,
+              48.6630209
+            ],
+            [
+              33.8357296,
+              48.6470799
+            ],
+            [
+              33.8579016,
+              48.6337238
+            ],
+            [
+              33.9235925,
+              48.666154
+            ],
+            [
+              33.9620583,
+              48.6710576
+            ],
+            [
+              33.9663896,
+              48.7039402
+            ],
+            [
+              33.9268998,
+              48.6987315
+            ]
+          ]
+        ]
+      },
+      "id": "relation/3521024"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "relation/3525393",
+        "admin_level": "8",
+        "boundary": "administrative",
+        "name": "Царичанка",
+        "place": "town",
+        "type": "boundary"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              34.4579408,
+              48.9232354
+            ],
+            [
+              34.4773547,
+              48.924486
+            ],
+            [
+              34.509524,
+              48.945013
+            ],
+            [
+              34.4728119,
+              48.9516292
+            ],
+            [
+              34.4638338,
+              48.9724619
+            ],
+            [
+              34.4499634,
+              48.9589831
+            ],
+            [
+              34.4605913,
+              48.9543808
+            ],
+            [
+              34.4492016,
+              48.9512289
+            ],
+            [
+              34.4628006,
+              48.9444493
+            ],
+            [
+              34.4522109,
+              48.9356919
+            ],
+            [
+              34.4579408,
+              48.9232354
+            ]
+          ]
+        ]
+      },
+      "id": "relation/3525393"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "relation/3525415",
+        "admin_level": "8",
+        "boundary": "administrative",
+        "name": "Підгородне",
+        "name:ru": "Подгородное",
+        "place": "town",
+        "type": "boundary"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              35.1425159,
+              48.5858015
+            ],
+            [
+              35.122026,
+              48.5925312
+            ],
+            [
+              35.1033892,
+              48.581901
+            ],
+            [
+              35.084783,
+              48.598189
+            ],
+            [
+              35.0339909,
+              48.5793409
+            ],
+            [
+              35.0808083,
+              48.5542271
+            ],
+            [
+              35.1410053,
+              48.5598322
+            ],
+            [
+              35.1613953,
+              48.5466751
+            ],
+            [
+              35.1789829,
+              48.5575409
+            ],
+            [
+              35.1591544,
+              48.5537889
+            ],
+            [
+              35.1425159,
+              48.5858015
+            ]
+          ]
+        ]
+      },
+      "id": "relation/3525415"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "relation/3527803",
+        "admin_level": "9",
+        "boundary": "administrative",
+        "name": "Аули",
+        "name:ru": "Аулы",
+        "place": "town",
+        "type": "boundary"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              34.4367697,
+              48.5399703
+            ],
+            [
+              34.4682361,
+              48.540913
+            ],
+            [
+              34.4844317,
+              48.5836911
+            ],
+            [
+              34.4638428,
+              48.5780252
+            ],
+            [
+              34.4367697,
+              48.5399703
+            ]
+          ]
+        ]
+      },
+      "id": "relation/3527803"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "relation/3527813",
+        "admin_level": "8",
+        "boundary": "administrative",
+        "name": "Дніпровське",
+        "place": "town",
+        "type": "boundary"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              34.4106904,
+              48.5738447
+            ],
+            [
+              34.4386846,
+              48.5943476
+            ],
+            [
+              34.4668427,
+              48.584067
+            ],
+            [
+              34.4213893,
+              48.6060333
+            ],
+            [
+              34.4032151,
+              48.5884744
+            ],
+            [
+              34.4106904,
+              48.5738447
+            ]
+          ]
+        ]
+      },
+      "id": "relation/3527813"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "relation/3528064",
+        "admin_level": "8",
+        "boundary": "administrative",
+        "name": "Обухівка",
+        "name:en": "Obukhivka",
+        "name:ru": "Обуховка",
+        "name:uk": "Обухівка",
+        "old_name": "Кіровське",
+        "old_name:en": "Kirovske",
+        "old_name:prefix": "селище міського типу",
+        "old_name:ru": "Кировское",
+        "old_name:uk": "Кіровське",
+        "place": "town",
+        "type": "boundary"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              34.8883941,
+              48.5412234
+            ],
+            [
+              34.8674033,
+              48.5518114
+            ],
+            [
+              34.902834,
+              48.5682986
+            ],
+            [
+              34.8289325,
+              48.5668058
+            ],
+            [
+              34.8163254,
+              48.5528146
+            ],
+            [
+              34.8695976,
+              48.5224865
+            ],
+            [
+              34.9319597,
+              48.5167555
+            ],
+            [
+              34.8893925,
+              48.5292899
+            ],
+            [
+              34.8883941,
+              48.5412234
+            ]
+          ]
+        ]
+      },
+      "id": "relation/3528064"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "relation/3553248",
+        "addr:postcode": "38500-38502",
+        "admin_level": "8",
+        "boundary": "administrative",
+        "koatuu": "5321055100",
+        "name": "Диканька",
+        "name:en": "Dykanka",
+        "name:pl": "Dykańka",
+        "name:ru": "Диканька",
+        "name:uk": "Диканька",
+        "place": "town",
+        "type": "boundary",
+        "wikidata": "Q1268711",
+        "wikipedia": "uk:Диканька",
+        "wikipedia:ru": "Диканька"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              34.5091487,
+              49.8318542
+            ],
+            [
+              34.4850572,
+              49.8099249
+            ],
+            [
+              34.5511276,
+              49.8014345
+            ],
+            [
+              34.5709438,
+              49.8210477
+            ],
+            [
+              34.5429979,
+              49.827798
+            ],
+            [
+              34.5540065,
+              49.8417585
+            ],
+            [
+              34.5407671,
+              49.845204
+            ],
+            [
+              34.496448,
+              49.8377288
+            ],
+            [
+              34.5091487,
+              49.8318542
+            ]
+          ]
+        ]
+      },
+      "id": "relation/3553248"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "relation/3606499",
+        "admin_level": "9",
+        "boundary": "administrative",
+        "koatuu": "1213500000",
+        "name": "Тернівка",
+        "name:de": "Terniwka",
+        "name:en": "Ternivka",
+        "name:pl": "Terniwka",
+        "name:ru": "Терновка",
+        "name:uk": "Тернівка",
+        "place": "town",
+        "type": "boundary",
+        "wikidata": "Q574421",
+        "wikipedia": "uk:Тернівка (місто)"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              36.0454207,
+              48.524641
+            ],
+            [
+              36.0373898,
+              48.5211426
+            ],
+            [
+              36.0464448,
+              48.5101103
+            ],
+            [
+              36.1002434,
+              48.5011636
+            ],
+            [
+              36.1235733,
+              48.5178582
+            ],
+            [
+              36.0856828,
+              48.5394887
+            ],
+            [
+              36.0454207,
+              48.524641
+            ]
+          ]
+        ]
+      },
+      "id": "relation/3606499"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "relation/3607918",
+        "admin_level": "6",
+        "boundary": "administrative",
+        "koatuu": "1212600000",
+        "name": "Першотравенськ",
+        "name:de": "Perschotrawensk",
+        "name:en": "Pershotravensk",
+        "name:pl": "Perszotraweńsk",
+        "name:ru": "Першотравенск",
+        "name:uk": "Першотравенськ",
+        "place": "town",
+        "type": "boundary",
+        "wikidata": "Q604607",
+        "wikipedia": "uk:Першотравенськ"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              36.4110957,
+              48.3580553
+            ],
+            [
+              36.382451,
+              48.358366
+            ],
+            [
+              36.391036,
+              48.332557
+            ],
+            [
+              36.4256323,
+              48.3370167
+            ],
+            [
+              36.4110957,
+              48.3580553
+            ]
+          ]
+        ]
+      },
+      "id": "relation/3607918"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "relation/3628093",
+        "admin_level": "8",
+        "boundary": "administrative",
+        "name": "Глобине",
+        "name:en": "Hlobyne",
+        "name:eo": "Hlobine",
+        "name:pl": "Hłobyne",
+        "name:ru": "Глобино",
+        "name:uk": "Глобине",
+        "place": "town",
+        "type": "boundary"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              33.1984794,
+              49.4082345
+            ],
+            [
+              33.2019134,
+              49.3939945
+            ],
+            [
+              33.2654726,
+              49.3717551
+            ],
+            [
+              33.3204214,
+              49.3709372
+            ],
+            [
+              33.3081147,
+              49.3852609
+            ],
+            [
+              33.3163833,
+              49.3901489
+            ],
+            [
+              33.2878094,
+              49.3904775
+            ],
+            [
+              33.2366968,
+              49.4237354
+            ],
+            [
+              33.1984794,
+              49.4082345
+            ]
+          ]
+        ]
+      },
+      "id": "relation/3628093"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "relation/3628438",
+        "admin_level": "8",
+        "boundary": "administrative",
+        "name": "Зіньків",
+        "name:en": "Zinkiv",
+        "name:eo": "Zinkiv",
+        "name:et": "Zinkiv",
+        "name:pl": "Zinków",
+        "name:ru": "Зеньков",
+        "name:uk": "Зіньків",
+        "place": "town",
+        "population": "9856",
+        "type": "boundary",
+        "wikidata": "Q269547",
+        "wikipedia": "uk:Зіньків"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              34.3450214,
+              50.2243765
+            ],
+            [
+              34.3328516,
+              50.2105244
+            ],
+            [
+              34.3609356,
+              50.1901507
+            ],
+            [
+              34.3938174,
+              50.2051322
+            ],
+            [
+              34.3904239,
+              50.2198843
+            ],
+            [
+              34.3450214,
+              50.2243765
+            ]
+          ]
+        ]
+      },
+      "id": "relation/3628438"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "relation/4061115",
+        "admin_level": "9",
+        "boundary": "administrative",
+        "name": "Салькове",
+        "name:pl": "Salkowe",
+        "place": "town",
+        "type": "boundary"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              29.9987478,
+              48.2269383
+            ],
+            [
+              29.9954248,
+              48.2730186
+            ],
+            [
+              29.9637519,
+              48.2782352
+            ],
+            [
+              29.9905643,
+              48.225454
+            ],
+            [
+              29.9987478,
+              48.2269383
+            ]
+          ]
+        ]
+      },
+      "id": "relation/4061115"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "relation/4097647",
+        "admin_level": "9",
+        "boundary": "administrative",
+        "koatuu": "5310200000",
+        "name": "Горішні Плавні",
+        "name:de": "Horischni Plavni",
+        "name:en": "Horishni Plavni",
+        "name:eo": "Horiŝni-Plavni",
+        "name:pl": "Horiszni Pławni",
+        "name:ru": "Горишние Плавни",
+        "name:uk": "Горішні Плавні",
+        "old_name": "Комсомольськ",
+        "old_name:de": "Komsomolsk",
+        "old_name:en": "Komsomolsk",
+        "old_name:eo": "Komsomolsk",
+        "old_name:pl": "Komsomolśk",
+        "old_name:ru": "Комсомольск",
+        "old_name:uk": "Комсомольськ",
+        "place": "town",
+        "population": "51958",
+        "type": "boundary",
+        "wikidata": "Q998227",
+        "wikipedia": "uk:Горішні Плавні"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              33.7378946,
+              48.9878324
+            ],
+            [
+              33.7594925,
+              48.9884082
+            ],
+            [
+              33.7596164,
+              49.0043553
+            ],
+            [
+              33.727876,
+              49.0054648
+            ],
+            [
+              33.7106559,
+              49.0489075
+            ],
+            [
+              33.6844651,
+              49.0554833
+            ],
+            [
+              33.6863421,
+              49.0905753
+            ],
+            [
+              33.6156893,
+              49.0973752
+            ],
+            [
+              33.6003556,
+              49.0652923
+            ],
+            [
+              33.5781922,
+              49.0698097
+            ],
+            [
+              33.5445344,
+              49.0347024
+            ],
+            [
+              33.5599854,
+              49.0091254
+            ],
+            [
+              33.7015982,
+              48.9743907
+            ],
+            [
+              33.7027487,
+              48.988017
+            ],
+            [
+              33.7378946,
+              48.9878324
+            ]
+          ]
+        ]
+      },
+      "id": "relation/4097647"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "relation/4100091",
+        "admin_level": "9",
+        "boundary": "administrative",
+        "koatuu": "5323255700",
+        "name": "Ромодан",
+        "place": "town",
+        "postal_code": "37650",
+        "type": "boundary"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              33.2983268,
+              49.9888057
+            ],
+            [
+              33.333106,
+              49.9830674
+            ],
+            [
+              33.3655468,
+              49.9987309
+            ],
+            [
+              33.3094288,
+              50.0087173
+            ],
+            [
+              33.3141133,
+              49.9950628
+            ],
+            [
+              33.2827889,
+              49.9909848
+            ],
+            [
+              33.2983268,
+              49.9888057
+            ]
+          ]
+        ]
+      },
+      "id": "relation/4100091"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "relation/4100261",
+        "admin_level": "8",
+        "boundary": "administrative",
+        "koatuu": "1222055100",
+        "name": "Кринички",
+        "name:de": "Krynytschky",
+        "name:en": "Krynychky",
+        "name:prefix": "селище міського типу",
+        "name:ru": "Кринички",
+        "name:uk": "Кринички",
+        "place": "town",
+        "population": "4657",
+        "postal_code": "52300-52305",
+        "type": "boundary",
+        "wikidata": "Q572142",
+        "wikipedia": "uk:Кринички (смт)",
+        "wikipedia:ru": "Кринички (Криничанский район)"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              34.4491033,
+              48.3780759
+            ],
+            [
+              34.414618,
+              48.3573444
+            ],
+            [
+              34.3931659,
+              48.3535909
+            ],
+            [
+              34.4156674,
+              48.3560932
+            ],
+            [
+              34.4353293,
+              48.362082
+            ],
+            [
+              34.4369652,
+              48.3479909
+            ],
+            [
+              34.494699,
+              48.3971745
+            ],
+            [
+              34.4491033,
+              48.3780759
+            ]
+          ]
+        ]
+      },
+      "id": "relation/4100261"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "relation/4102536",
+        "admin_level": "9",
+        "boundary": "administrative",
+        "koatuu": "5320655400",
+        "name": "Градизьк",
+        "name:ru": "Градижск",
+        "place": "town",
+        "type": "boundary"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              33.0977852,
+              49.2433916
+            ],
+            [
+              33.1322024,
+              49.2029355
+            ],
+            [
+              33.1644997,
+              49.2233172
+            ],
+            [
+              33.1544911,
+              49.2328155
+            ],
+            [
+              33.1627724,
+              49.2424314
+            ],
+            [
+              33.145271,
+              49.251354
+            ],
+            [
+              33.1149856,
+              49.2470981
+            ],
+            [
+              33.0912228,
+              49.2584658
+            ],
+            [
+              33.0977852,
+              49.2433916
+            ]
+          ]
+        ]
+      },
+      "id": "relation/4102536"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "relation/4202107",
+        "admin_level": "9",
+        "boundary": "administrative",
+        "koatuu": "5324555100",
+        "name": "Семенівка",
+        "name:be": "Сямёнаўка",
+        "name:de": "Semeniwka",
+        "name:en": "Semenivka",
+        "name:pl": "Semeniwka",
+        "name:ru": "Семёновка",
+        "name:uk": "Семенівка",
+        "place": "town",
+        "type": "boundary"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              33.1884674,
+              49.6323364
+            ],
+            [
+              33.1879574,
+              49.6158606
+            ],
+            [
+              33.1320995,
+              49.6043465
+            ],
+            [
+              33.1326466,
+              49.5859595
+            ],
+            [
+              33.1748103,
+              49.5663199
+            ],
+            [
+              33.2180539,
+              49.5795874
+            ],
+            [
+              33.2135657,
+              49.5967324
+            ],
+            [
+              33.1965405,
+              49.5990056
+            ],
+            [
+              33.2199927,
+              49.6269006
+            ],
+            [
+              33.188934,
+              49.6422793
+            ],
+            [
+              33.1884674,
+              49.6323364
+            ]
+          ]
+        ]
+      },
+      "id": "relation/4202107"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "relation/5162205",
+        "addr:postcode": "27500",
+        "name": "Світловодськ",
+        "name:de": "Switlowodsk",
+        "name:en": "Svitlovodsk",
+        "name:eo": "Svitlovodsk",
+        "name:fr": "Svitlovodsk",
+        "name:pl": "Switłowodsk",
+        "name:ru": "Светловодск",
+        "name:uk": "Світловодськ",
+        "place": "town",
+        "population": "45673",
+        "type": "multipolygon",
+        "wikidata": "Q1011435",
+        "wikipedia": "uk:Світловодськ"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              33.2413099,
+              49.0641978
+            ],
+            [
+              33.1462294,
+              49.0494858
+            ],
+            [
+              33.1423731,
+              49.0368227
+            ],
+            [
+              33.248978,
+              49.0313745
+            ],
+            [
+              33.2631589,
+              49.041713
+            ],
+            [
+              33.2626639,
+              49.0617017
+            ],
+            [
+              33.2924632,
+              49.070474
+            ],
+            [
+              33.2413099,
+              49.0641978
+            ]
+          ]
+        ]
+      },
+      "id": "relation/5162205"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "relation/5479367",
+        "admin_level": "8",
+        "boundary": "administrative",
+        "name": "Павлиш",
+        "place": "town",
+        "type": "boundary"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              33.3863592,
+              48.9142649
+            ],
+            [
+              33.3942862,
+              48.9214239
+            ],
+            [
+              33.2921025,
+              48.9335314
+            ],
+            [
+              33.3323972,
+              48.9104861
+            ],
+            [
+              33.3649621,
+              48.9041788
+            ],
+            [
+              33.3863592,
+              48.9142649
+            ]
+          ]
+        ]
+      },
+      "id": "relation/5479367"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "relation/5497994",
+        "admin_level": "8",
+        "boundary": "administrative",
+        "landuse": "residential",
+        "name": "Скороходове",
+        "name:de": "Skorochodowe",
+        "name:en": "Skorokhodove",
+        "name:ru": "Скороходово",
+        "name:uk": "Скороходове",
+        "place": "town",
+        "type": "boundary"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              35.0880379,
+              49.786652
+            ],
+            [
+              35.0657303,
+              49.7817482
+            ],
+            [
+              35.0418915,
+              49.7656907
+            ],
+            [
+              35.0727354,
+              49.7535269
+            ],
+            [
+              35.0907083,
+              49.7610876
+            ],
+            [
+              35.103416,
+              49.773584
+            ],
+            [
+              35.0880379,
+              49.786652
+            ]
+          ]
+        ]
+      },
+      "id": "relation/5497994"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "relation/5510327",
+        "admin_level": "8",
+        "boundary": "administrative",
+        "name": "Карнаухівка",
+        "name:ru": "Карнауховка",
+        "place": "town",
+        "type": "boundary"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              34.7601825,
+              48.4404849
+            ],
+            [
+              34.7716041,
+              48.4732972
+            ],
+            [
+              34.7424822,
+              48.4960383
+            ],
+            [
+              34.703175,
+              48.4925646
+            ],
+            [
+              34.7126554,
+              48.4694711
+            ],
+            [
+              34.7601825,
+              48.4404849
+            ]
+          ]
+        ]
+      },
+      "id": "relation/5510327"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "relation/5511988",
+        "admin_level": "8",
+        "boundary": "administrative",
+        "name": "Петропавлівка",
+        "place": "town",
+        "type": "boundary"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              36.4143538,
+              48.4394303
+            ],
+            [
+              36.4685835,
+              48.4460368
+            ],
+            [
+              36.4692119,
+              48.4661017
+            ],
+            [
+              36.4126986,
+              48.473757
+            ],
+            [
+              36.4021624,
+              48.446014
+            ],
+            [
+              36.4143538,
+              48.4394303
+            ]
+          ]
+        ]
+      },
+      "id": "relation/5511988"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "relation/5511989",
+        "admin_level": "8",
+        "boundary": "administrative",
+        "name": "Софіївка",
+        "place": "town",
+        "type": "boundary"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              33.8775726,
+              48.0399446
+            ],
+            [
+              33.9006641,
+              48.0455174
+            ],
+            [
+              33.8883606,
+              48.0584692
+            ],
+            [
+              33.9037999,
+              48.0604639
+            ],
+            [
+              33.8989787,
+              48.0703982
+            ],
+            [
+              33.9515654,
+              48.0833957
+            ],
+            [
+              33.9443326,
+              48.1058672
+            ],
+            [
+              33.9153632,
+              48.1059437
+            ],
+            [
+              33.9203298,
+              48.1207462
+            ],
+            [
+              33.8916716,
+              48.1156706
+            ],
+            [
+              33.9036073,
+              48.0995021
+            ],
+            [
+              33.8907007,
+              48.0799329
+            ],
+            [
+              33.8431293,
+              48.0579134
+            ],
+            [
+              33.8521042,
+              48.0338343
+            ],
+            [
+              33.8775726,
+              48.0399446
+            ]
+          ]
+        ]
+      },
+      "id": "relation/5511989"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "relation/8132605",
+        "alt_name:de": "Mirgorod",
+        "alt_name:en": "Mirgorod",
+        "name": "Миргород",
+        "name:de": "Myrhorod",
+        "name:en": "Myrhorod",
+        "name:eo": "Mirhorodo",
+        "name:et": "Mõrgorod",
+        "name:hu": "Myrhorod",
+        "name:pl": "Myrhorod",
+        "name:prefix": "місто",
+        "name:ru": "Миргород",
+        "name:uk": "Миргород",
+        "place": "town",
+        "population": "41267",
+        "type": "multipolygon",
+        "wikidata": "Q161961",
+        "wikipedia": "uk:Миргород"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              33.6478695,
+              49.9427049
+            ],
+            [
+              33.646038,
+              49.956708
+            ],
+            [
+              33.6630502,
+              49.9674289
+            ],
+            [
+              33.6425424,
+              49.9916898
+            ],
+            [
+              33.5770298,
+              49.9960239
+            ],
+            [
+              33.5854735,
+              49.98658
+            ],
+            [
+              33.5578043,
+              49.9670678
+            ],
+            [
+              33.6061562,
+              49.9385678
+            ],
+            [
+              33.6478695,
+              49.9427049
+            ]
+          ]
+        ]
+      },
+      "id": "relation/8132605"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "relation/8531351",
+        "admin_level": "8",
+        "boundary": "administrative",
+        "name": "Хорол",
+        "place": "town",
+        "type": "boundary"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              33.2889574,
+              49.7821143
+            ],
+            [
+              33.3163703,
+              49.7906311
+            ],
+            [
+              33.2715835,
+              49.7994218
+            ],
+            [
+              33.2405159,
+              49.7814026
+            ],
+            [
+              33.2772369,
+              49.7663039
+            ],
+            [
+              33.2889574,
+              49.7821143
+            ]
+          ]
+        ]
+      },
+      "id": "relation/8531351"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "relation/9086712",
+        "name": "Решетилівка",
+        "place": "town",
+        "type": "multipolygon"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              34.0804018,
+              49.5422185
+            ],
+            [
+              34.1058296,
+              49.5756918
+            ],
+            [
+              34.0687677,
+              49.5812469
+            ],
+            [
+              34.0467563,
+              49.5709844
+            ],
+            [
+              34.0624087,
+              49.5484679
+            ],
+            [
+              34.0548175,
+              49.5318326
+            ],
+            [
+              34.0846099,
+              49.529302
+            ],
+            [
+              34.0804018,
+              49.5422185
+            ]
+          ]
+        ]
+      },
+      "id": "relation/9086712"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "relation/1017311",
+        "flag": "http://upload.wikimedia.org/wikipedia/commons/7/72/Flag_of_Dnipropetrovsk.svg",
+        "koatuu": "1210100000",
+        "name": "Дніпро",
+        "name:en": "Dnipro",
+        "name:eo": "Dnipro",
+        "name:fi": "Dnipro",
+        "name:hu": "Dnyipro",
+        "name:io": "Dnipro",
+        "name:pl": "Dniepr",
+        "name:ru": "Днепр",
+        "name:sr": "Дњепро",
+        "name:uk": "Дніпро",
+        "old_name": "Дніпропетровськ",
+        "old_name:ast": "Dnipropetrovsk",
+        "old_name:de": "Dnipropetrowsk",
+        "old_name:en": "Dnipropetrovsk",
+        "old_name:eo": "Dnipropetrovsko",
+        "old_name:io": "Dnipropetrovsk",
+        "old_name:lt": "Dniepropetrovskas",
+        "old_name:pl": "Dniepropetrowsk",
+        "old_name:ru": "Днепропетровск",
+        "old_name:uk": "Дніпропетровськ",
+        "place": "city",
+        "population": "1080486",
+        "source:name": "http://w1.c1.rada.gov.ua/pls/zweb2/webproc4_1?pf3511=58016",
+        "type": "multipolygon",
+        "wikidata": "Q48256",
+        "wikipedia": "uk:Дніпро (місто)"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              34.8906799,
+              48.5237783
+            ],
+            [
+              34.8339719,
+              48.4917429
+            ],
+            [
+              34.7489459,
+              48.4839979
+            ],
+            [
+              34.7716041,
+              48.4732972
+            ],
+            [
+              34.7601825,
+              48.4404849
+            ],
+            [
+              34.8103125,
+              48.4218373
+            ],
+            [
+              34.8613138,
+              48.4476627
+            ],
+            [
+              34.8802846,
+              48.4362595
+            ],
+            [
+              34.9324691,
+              48.4432989
+            ],
+            [
+              34.9480861,
+              48.4338854
+            ],
+            [
+              34.9215842,
+              48.4254954
+            ],
+            [
+              34.9264571,
+              48.4178371
+            ],
+            [
+              34.9024794,
+              48.4201739
+            ],
+            [
+              34.902877,
+              48.4037537
+            ],
+            [
+              34.9249408,
+              48.3957405
+            ],
+            [
+              34.9385837,
+              48.4068981
+            ],
+            [
+              34.9525143,
+              48.3959416
+            ],
+            [
+              34.945916,
+              48.3899643
+            ],
+            [
+              34.9769221,
+              48.3827171
+            ],
+            [
+              34.9691994,
+              48.3677877
+            ],
+            [
+              35.0037059,
+              48.3558547
+            ],
+            [
+              35.0175562,
+              48.3889658
+            ],
+            [
+              35.1554353,
+              48.3982955
+            ],
+            [
+              35.1706404,
+              48.4115721
+            ],
+            [
+              35.1371585,
+              48.4512274
+            ],
+            [
+              35.1646349,
+              48.474746
+            ],
+            [
+              35.2068431,
+              48.4507882
+            ],
+            [
+              35.1933347,
+              48.4438593
+            ],
+            [
+              35.1970583,
+              48.4263499
+            ],
+            [
+              35.2142814,
+              48.437904
+            ],
+            [
+              35.2421952,
+              48.4335974
+            ],
+            [
+              35.2239251,
+              48.4456263
+            ],
+            [
+              35.2385668,
+              48.4532981
+            ],
+            [
+              35.1987186,
+              48.4875908
+            ],
+            [
+              35.2065074,
+              48.5078692
+            ],
+            [
+              35.1288189,
+              48.505158
+            ],
+            [
+              35.1146867,
+              48.5434457
+            ],
+            [
+              35.0891861,
+              48.5400852
+            ],
+            [
+              35.0835691,
+              48.5269899
+            ],
+            [
+              35.0602951,
+              48.5381431
+            ],
+            [
+              35.0323102,
+              48.52643
+            ],
+            [
+              35.008449,
+              48.5484826
+            ],
+            [
+              35.0314632,
+              48.5555873
+            ],
+            [
+              35.0178632,
+              48.5645962
+            ],
+            [
+              34.987637,
+              48.5449742
+            ],
+            [
+              34.964706,
+              48.5564444
+            ],
+            [
+              34.9689041,
+              48.5472653
+            ],
+            [
+              34.9291643,
+              48.5763846
+            ],
+            [
+              34.9135696,
+              48.557703
+            ],
+            [
+              34.878847,
+              48.5613962
+            ],
+            [
+              34.8800567,
+              48.5445065
+            ],
+            [
+              34.8702021,
+              48.5475045
+            ],
+            [
+              34.9319597,
+              48.5167555
+            ],
+            [
+              34.8906799,
+              48.5237783
+            ]
+          ]
+        ]
+      },
+      "id": "relation/1017311"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "relation/1641691",
+        "admin_level": "6",
+        "boundary": "administrative",
+        "flag": "https://upload.wikimedia.org/wikipedia/commons/b/b5/Poltava_flag.jpg",
+        "is_in:state": "Полтавська область",
+        "koatuu": "5310100000",
+        "name": "Полтава",
+        "name:de": "Poltawa",
+        "name:en": "Poltava",
+        "name:eo": "Poltavo",
+        "name:pl": "Połtawa",
+        "name:ru": "Полтава",
+        "name:uk": "Полтава",
+        "place": "city",
+        "population": "293302",
+        "type": "boundary",
+        "wikidata": "Q156747",
+        "wikipedia": "uk:Полтава"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              34.5755827,
+              49.6380767
+            ],
+            [
+              34.573535,
+              49.6516207
+            ],
+            [
+              34.5508554,
+              49.6579108
+            ],
+            [
+              34.5312204,
+              49.6573414
+            ],
+            [
+              34.5264166,
+              49.6431831
+            ],
+            [
+              34.4933308,
+              49.6537846
+            ],
+            [
+              34.50758,
+              49.6356992
+            ],
+            [
+              34.4708541,
+              49.6307561
+            ],
+            [
+              34.4624372,
+              49.6168444
+            ],
+            [
+              34.4732493,
+              49.6128638
+            ],
+            [
+              34.4581611,
+              49.604893
+            ],
+            [
+              34.4697851,
+              49.5923247
+            ],
+            [
+              34.4470378,
+              49.585263
+            ],
+            [
+              34.4721113,
+              49.5830582
+            ],
+            [
+              34.4631826,
+              49.569689
+            ],
+            [
+              34.4914889,
+              49.5628456
+            ],
+            [
+              34.4951064,
+              49.5497815
+            ],
+            [
+              34.5846825,
+              49.5555641
+            ],
+            [
+              34.6104032,
+              49.5718307
+            ],
+            [
+              34.6223468,
+              49.6090842
+            ],
+            [
+              34.6509787,
+              49.6083248
+            ],
+            [
+              34.6603407,
+              49.6225538
+            ],
+            [
+              34.6154149,
+              49.6149182
+            ],
+            [
+              34.6232635,
+              49.6340718
+            ],
+            [
+              34.5755827,
+              49.6380767
+            ]
+          ]
+        ]
+      },
+      "id": "relation/1641691"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "relation/1746879",
+        "admin_level": "6",
+        "boundary": "administrative",
+        "koatuu": "1212400000",
+        "name": "Павлоград",
+        "name:de": "Pawlohrad",
+        "name:en": "Pavlohrad",
+        "name:eo": "Pavlohrad",
+        "name:pl": "Pawłohrad",
+        "name:ru": "Павлоград",
+        "name:sr": "Павлоград",
+        "name:uk": "Павлоград",
+        "place": "city",
+        "population": "108321",
+        "type": "boundary",
+        "wikidata": "Q237206",
+        "wikipedia": "uk:Павлоград"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              35.8575849,
+              48.5131825
+            ],
+            [
+              35.8418456,
+              48.5025714
+            ],
+            [
+              35.854329,
+              48.4943606
+            ],
+            [
+              35.8625372,
+              48.5102887
+            ],
+            [
+              35.8886498,
+              48.5101962
+            ],
+            [
+              35.9209221,
+              48.4973905
+            ],
+            [
+              35.9284223,
+              48.475678
+            ],
+            [
+              35.9673177,
+              48.4883944
+            ],
+            [
+              35.9584538,
+              48.5036129
+            ],
+            [
+              35.9735781,
+              48.5099988
+            ],
+            [
+              35.9389025,
+              48.5186082
+            ],
+            [
+              35.9237087,
+              48.5038648
+            ],
+            [
+              35.8995099,
+              48.5160067
+            ],
+            [
+              35.9302935,
+              48.5378494
+            ],
+            [
+              35.9481142,
+              48.5224359
+            ],
+            [
+              35.9582797,
+              48.5322469
+            ],
+            [
+              35.9342296,
+              48.5481499
+            ],
+            [
+              35.904012,
+              48.5389781
+            ],
+            [
+              35.8680663,
+              48.5727937
+            ],
+            [
+              35.856904,
+              48.5605834
+            ],
+            [
+              35.8470484,
+              48.5711253
+            ],
+            [
+              35.8539288,
+              48.5848018
+            ],
+            [
+              35.7766646,
+              48.577181
+            ],
+            [
+              35.7835143,
+              48.5607351
+            ],
+            [
+              35.8050887,
+              48.5682457
+            ],
+            [
+              35.8309617,
+              48.5479912
+            ],
+            [
+              35.813006,
+              48.5392125
+            ],
+            [
+              35.8264946,
+              48.5092128
+            ],
+            [
+              35.8575849,
+              48.5131825
+            ]
+          ]
+        ]
+      },
+      "id": "relation/1746879"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "relation/1821193",
+        "admin_level": "6",
+        "alt_name:ar": "كريفيي ريه",
+        "alt_name:de": "Kriwoi Rog",
+        "alt_name:en": "Krivoy Rog",
+        "boundary": "administrative",
+        "koatuu": "1211000000",
+        "name": "Кривий Ріг",
+        "name:ar": "كريفي ريه",
+        "name:be": "Крывы Рог",
+        "name:ca": "Krivoy Rog",
+        "name:cs": "Krivoj Rog",
+        "name:de": "Krywyj Rih",
+        "name:en": "Kryvyi Rih",
+        "name:eo": "Krivij-Rih",
+        "name:es": "Krivoy Rog",
+        "name:fr": "Kryvyï Rih",
+        "name:hu": "Krivij Rih",
+        "name:io": "Kryvyi Rih",
+        "name:ja": "クリヴォログ",
+        "name:lb": "Kriviy Rig",
+        "name:lt": "Kryvyj Rihas",
+        "name:pl": "Krzywy Róg",
+        "name:ru": "Кривой Рог",
+        "name:sr": "Криви Рог",
+        "name:tr": "Kryvyi Rih",
+        "name:uk": "Кривий Ріг",
+        "name:yi": "או קריבוי רוג",
+        "name:zh": "克里沃罗格",
+        "place": "city",
+        "population": "656700",
+        "type": "boundary",
+        "wikidata": "Q157137",
+        "wikipedia": "uk:Кривий Ріг"
+      },
+      "geometry": {
+        "type": "MultiPolygon",
+        "coordinates": [
+          [
+            [
+              [
+                33.2250706,
+                47.885804
+              ],
+              [
+                33.2635204,
+                47.8617601
+              ],
+              [
+                33.2550716,
+                47.8386372
+              ],
+              [
+                33.269181,
+                47.8320274
+              ],
+              [
+                33.2533456,
+                47.8107902
+              ],
+              [
+                33.2193766,
+                47.8228142
+              ],
+              [
+                33.2361046,
+                47.8106276
+              ],
+              [
+                33.2368715,
+                47.7900572
+              ],
+              [
+                33.2468792,
+                47.7873207
+              ],
+              [
+                33.2594853,
+                47.8129533
+              ],
+              [
+                33.2702442,
+                47.7909784
+              ],
+              [
+                33.2910946,
+                47.793293
+              ],
+              [
+                33.3072308,
+                47.8157741
+              ],
+              [
+                33.3238356,
+                47.8081707
+              ],
+              [
+                33.3087429,
+                47.7745019
+              ],
+              [
+                33.2842015,
+                47.7575006
+              ],
+              [
+                33.2769379,
+                47.7483061
+              ],
+              [
+                33.2698383,
+                47.7132295
+              ],
+              [
+                33.227414,
+                47.7192492
+              ],
+              [
+                33.2313898,
+                47.7406934
+              ],
+              [
+                33.1687626,
+                47.6874135
+              ],
+              [
+                33.1543858,
+                47.6984215
+              ],
+              [
+                33.1400199,
+                47.6882674
+              ],
+              [
+                33.155013,
+                47.6539687
+              ],
+              [
+                33.2305097,
+                47.6555888
+              ],
+              [
+                33.2402086,
+                47.6754153
+              ],
+              [
+                33.2594776,
+                47.6807897
+              ],
+              [
+                33.2183542,
+                47.696028
+              ],
+              [
+                33.226883,
+                47.7186779
+              ],
+              [
+                33.2705023,
+                47.7127487
+              ],
+              [
+                33.2776073,
+                47.7485107
+              ],
+              [
+                33.3093274,
+                47.7744962
+              ],
+              [
+                33.3171987,
+                47.7910739
+              ],
+              [
+                33.3886527,
+                47.7907856
+              ],
+              [
+                33.3892967,
+                47.8243729
+              ],
+              [
+                33.4499497,
+                47.8317537
+              ],
+              [
+                33.44738,
+                47.8491332
+              ],
+              [
+                33.4684929,
+                47.8767354
+              ],
+              [
+                33.4838565,
+                47.8489089
+              ],
+              [
+                33.5087571,
+                47.8451155
+              ],
+              [
+                33.5173727,
+                47.8673444
+              ],
+              [
+                33.5686557,
+                47.8802416
+              ],
+              [
+                33.5451839,
+                47.9052177
+              ],
+              [
+                33.4861515,
+                47.9030267
+              ],
+              [
+                33.4844082,
+                47.9347852
+              ],
+              [
+                33.4697528,
+                47.9372497
+              ],
+              [
+                33.4660965,
+                47.9587862
+              ],
+              [
+                33.4886668,
+                47.9544488
+              ],
+              [
+                33.523447,
+                47.9811246
+              ],
+              [
+                33.4956573,
+                48.0278385
+              ],
+              [
+                33.5473078,
+                48.028167
+              ],
+              [
+                33.5358732,
+                48.0510777
+              ],
+              [
+                33.6000825,
+                48.0595253
+              ],
+              [
+                33.5646934,
+                48.0764164
+              ],
+              [
+                33.5708451,
+                48.1001309
+              ],
+              [
+                33.5926375,
+                48.1038159
+              ],
+              [
+                33.5929047,
+                48.1554563
+              ],
+              [
+                33.5689988,
+                48.1518011
+              ],
+              [
+                33.5571504,
+                48.1825099
+              ],
+              [
+                33.5209544,
+                48.1967488
+              ],
+              [
+                33.5355166,
+                48.1530708
+              ],
+              [
+                33.4832561,
+                48.137471
+              ],
+              [
+                33.471037,
+                48.0996952
+              ],
+              [
+                33.4810008,
+                48.0771633
+              ],
+              [
+                33.4558598,
+                48.0529764
+              ],
+              [
+                33.3996138,
+                48.074706
+              ],
+              [
+                33.4142635,
+                48.0958259
+              ],
+              [
+                33.406745,
+                48.1073024
+              ],
+              [
+                33.3682064,
+                48.0857493
+              ],
+              [
+                33.38998,
+                48.0627571
+              ],
+              [
+                33.4539898,
+                48.0511497
+              ],
+              [
+                33.4349398,
+                48.0283436
+              ],
+              [
+                33.3984822,
+                48.0209971
+              ],
+              [
+                33.4006598,
+                47.9988934
+              ],
+              [
+                33.3800142,
+                48.0024877
+              ],
+              [
+                33.3711077,
+                47.9814036
+              ],
+              [
+                33.3822586,
+                47.9690702
+              ],
+              [
+                33.3600223,
+                47.9594504
+              ],
+              [
+                33.3575695,
+                47.9460087
+              ],
+              [
+                33.3074838,
+                47.9367414
+              ],
+              [
+                33.2871956,
+                47.9268573
+              ],
+              [
+                33.2840884,
+                47.9067895
+              ],
+              [
+                33.2250706,
+                47.885804
+              ]
+            ]
+          ]
+        ]
+      },
+      "id": "relation/1821193"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "relation/2238215",
+        "name": "Кам’янське",
+        "name:en": "Kamianske",
+        "name:eo": "Kamjansko",
+        "name:hu": "Kamjanszke",
+        "name:pl": "Kamjanśke",
+        "name:ru": "Каменское",
+        "name:sr": "Камјанске",
+        "name:uk": "Кам’янське",
+        "old_name": "Дніпродзержинськ",
+        "old_name:de": "Dniprodserschynsk",
+        "old_name:en": "Dniprodzerzhynsk",
+        "old_name:eo": "Dniprodzerĵinsk",
+        "old_name:lt": "Dnieprodzeržinskas",
+        "old_name:pl": "Dnieprodzierżyńsk",
+        "old_name:ru": "Днепродзержинск",
+        "old_name:uk": "Дніпродзержинськ",
+        "place": "city",
+        "population": "239237",
+        "type": "multipolygon",
+        "wikidata": "Q156719",
+        "wikipedia": "uk:Кам'янське"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              34.5269423,
+              48.5066065
+            ],
+            [
+              34.5831721,
+              48.4718624
+            ],
+            [
+              34.5732441,
+              48.4931782
+            ],
+            [
+              34.6046778,
+              48.4907717
+            ],
+            [
+              34.6062315,
+              48.4638895
+            ],
+            [
+              34.5903545,
+              48.4515069
+            ],
+            [
+              34.6293258,
+              48.4511995
+            ],
+            [
+              34.6588939,
+              48.4730651
+            ],
+            [
+              34.6552847,
+              48.4642669
+            ],
+            [
+              34.6962468,
+              48.4515384
+            ],
+            [
+              34.6911833,
+              48.4414098
+            ],
+            [
+              34.7121426,
+              48.4427802
+            ],
+            [
+              34.7018051,
+              48.4711298
+            ],
+            [
+              34.7154564,
+              48.4725259
+            ],
+            [
+              34.703175,
+              48.4925646
+            ],
+            [
+              34.7220288,
+              48.5014079
+            ],
+            [
+              34.6773171,
+              48.5318853
+            ],
+            [
+              34.593388,
+              48.531497
+            ],
+            [
+              34.5414804,
+              48.5459167
+            ],
+            [
+              34.5669002,
+              48.5877916
+            ],
+            [
+              34.632878,
+              48.5899626
+            ],
+            [
+              34.631076,
+              48.601252
+            ],
+            [
+              34.5948745,
+              48.5908466
+            ],
+            [
+              34.5851793,
+              48.5990137
+            ],
+            [
+              34.6094832,
+              48.6081127
+            ],
+            [
+              34.6064235,
+              48.6261268
+            ],
+            [
+              34.5905284,
+              48.6217167
+            ],
+            [
+              34.6009061,
+              48.6087456
+            ],
+            [
+              34.5831636,
+              48.5990661
+            ],
+            [
+              34.5607411,
+              48.6166357
+            ],
+            [
+              34.5316563,
+              48.6019669
+            ],
+            [
+              34.5569498,
+              48.5821111
+            ],
+            [
+              34.5317314,
+              48.5307622
+            ],
+            [
+              34.4889451,
+              48.5341141
+            ],
+            [
+              34.4933334,
+              48.5157295
+            ],
+            [
+              34.4798366,
+              48.5108956
+            ],
+            [
+              34.5029011,
+              48.509966
+            ],
+            [
+              34.5031744,
+              48.5200429
+            ],
+            [
+              34.5156269,
+              48.5021099
+            ],
+            [
+              34.5269423,
+              48.5066065
+            ]
+          ]
+        ]
+      },
+      "id": "relation/2238215"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "relation/2318332",
+        "admin_level": "9",
+        "boundary": "administrative",
+        "name": "Нікополь",
+        "name:en": "Nikopol",
+        "name:eo": "Nikopol",
+        "name:pl": "Nikopol",
+        "name:ru": "Никополь",
+        "place": "city",
+        "type": "boundary"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              34.2885315,
+              47.6038263
+            ],
+            [
+              34.2852504,
+              47.5960795
+            ],
+            [
+              34.3080074,
+              47.5872191
+            ],
+            [
+              34.2845609,
+              47.5893725
+            ],
+            [
+              34.3037689,
+              47.5768007
+            ],
+            [
+              34.4045098,
+              47.5467213
+            ],
+            [
+              34.4217753,
+              47.5663105
+            ],
+            [
+              34.465907,
+              47.5743762
+            ],
+            [
+              34.4459628,
+              47.5834894
+            ],
+            [
+              34.4598894,
+              47.6030047
+            ],
+            [
+              34.4343913,
+              47.5988249
+            ],
+            [
+              34.4381266,
+              47.5839679
+            ],
+            [
+              34.4260163,
+              47.5806581
+            ],
+            [
+              34.3929745,
+              47.6038156
+            ],
+            [
+              34.2885315,
+              47.6038263
+            ]
+          ]
+        ]
+      },
+      "id": "relation/2318332"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "relation/2320579",
+        "admin_level": "9",
+        "boundary": "administrative",
+        "koatuu": "5310400000",
+        "name": "Кременчук",
+        "name:cs": "Kremenčuk",
+        "name:en": "Kremenchuk",
+        "name:eo": "Kremenĉuk",
+        "name:pl": "Krzemieńczuk",
+        "name:ru": "Кременчуг",
+        "name:sr": "Кременчук",
+        "name:uk": "Кременчук",
+        "name:uz": "Kremenchuk",
+        "name:zh": "克列缅丘克",
+        "old_name:sr": "Кременчуг",
+        "old_name:uz": "Kremenchug",
+        "old_name:zh": "克列緬丘格",
+        "place": "city",
+        "population": "223451",
+        "type": "boundary",
+        "wikidata": "Q156724",
+        "wikipedia": "uk:Кременчук"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              33.4405883,
+              49.0479408
+            ],
+            [
+              33.4820433,
+              49.0491495
+            ],
+            [
+              33.4770688,
+              49.0578883
+            ],
+            [
+              33.4904606,
+              49.0624218
+            ],
+            [
+              33.4475794,
+              49.0747357
+            ],
+            [
+              33.5045595,
+              49.1096194
+            ],
+            [
+              33.4811086,
+              49.1083055
+            ],
+            [
+              33.489774,
+              49.1188418
+            ],
+            [
+              33.4570273,
+              49.120402
+            ],
+            [
+              33.4524254,
+              49.1309803
+            ],
+            [
+              33.5111075,
+              49.1721578
+            ],
+            [
+              33.4921527,
+              49.1851676
+            ],
+            [
+              33.430292,
+              49.1774522
+            ],
+            [
+              33.4380154,
+              49.1648835
+            ],
+            [
+              33.4135883,
+              49.1309033
+            ],
+            [
+              33.4211306,
+              49.1188259
+            ],
+            [
+              33.3902106,
+              49.1101838
+            ],
+            [
+              33.3931731,
+              49.0971229
+            ],
+            [
+              33.3730781,
+              49.0882693
+            ],
+            [
+              33.3938001,
+              49.0752098
+            ],
+            [
+              33.3749446,
+              49.0663139
+            ],
+            [
+              33.4190979,
+              49.0456668
+            ],
+            [
+              33.4030993,
+              49.0243272
+            ],
+            [
+              33.4143898,
+              49.0239828
+            ],
+            [
+              33.4053555,
+              49.0039416
+            ],
+            [
+              33.4206519,
+              49.0094475
+            ],
+            [
+              33.4279543,
+              48.9965557
+            ],
+            [
+              33.4321141,
+              49.0085978
+            ],
+            [
+              33.486963,
+              49.0220738
+            ],
+            [
+              33.4405883,
+              49.0479408
+            ]
+          ]
+        ]
+      },
+      "id": "relation/2320579"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "relation/2825228",
+        "admin_level": "9",
+        "boundary": "administrative",
+        "koatuu": "3510100000",
+        "name": "Кропивницький",
+        "name:be": "Крапіўніцкі",
+        "name:de": "Kropywnyzkyj",
+        "name:en": "Kropyvnytskyi",
+        "name:eo": "Kropivnicko",
+        "name:pl": "Kropywnycki",
+        "name:ru": "Кропивницкий",
+        "name:sr": "Кропивницкиј",
+        "name:uk": "Кропивницький",
+        "official_name": "Кропивницький",
+        "old_name": "Кіровоград",
+        "old_name:be": "Кіраваград",
+        "old_name:de": "Kirowohrad",
+        "old_name:en": "Kirovohrad",
+        "old_name:eo": "Kirovogrado",
+        "old_name:fr": "Kirovohrad",
+        "old_name:hr": "Kirovograd",
+        "old_name:hu": "Kirovohrad",
+        "old_name:lt": "Kirovohradas",
+        "old_name:pl": "Kirowohrad",
+        "old_name:ru": "Кировоград",
+        "old_name:uk": "Кіровоград",
+        "place": "city",
+        "population": "231089",
+        "type": "boundary",
+        "wikidata": "Q158292",
+        "wikipedia": "uk:Кропивницький"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              32.1050045,
+              48.5159908
+            ],
+            [
+              32.1952421,
+              48.5062615
+            ],
+            [
+              32.205874,
+              48.501198
+            ],
+            [
+              32.1903667,
+              48.4853391
+            ],
+            [
+              32.2239091,
+              48.4912699
+            ],
+            [
+              32.2214444,
+              48.4816294
+            ],
+            [
+              32.2534763,
+              48.4783093
+            ],
+            [
+              32.2521114,
+              48.4605266
+            ],
+            [
+              32.2865081,
+              48.4764527
+            ],
+            [
+              32.3041956,
+              48.4659583
+            ],
+            [
+              32.3173704,
+              48.4815112
+            ],
+            [
+              32.3059803,
+              48.4923132
+            ],
+            [
+              32.3358808,
+              48.4933014
+            ],
+            [
+              32.2971459,
+              48.5036549
+            ],
+            [
+              32.3169268,
+              48.5167648
+            ],
+            [
+              32.3074512,
+              48.5388567
+            ],
+            [
+              32.3527523,
+              48.5410006
+            ],
+            [
+              32.3526165,
+              48.5529984
+            ],
+            [
+              32.3092622,
+              48.5426795
+            ],
+            [
+              32.2742365,
+              48.5568408
+            ],
+            [
+              32.2819066,
+              48.5810044
+            ],
+            [
+              32.2263046,
+              48.5805536
+            ],
+            [
+              32.2212435,
+              48.5694109
+            ],
+            [
+              32.192886,
+              48.5660309
+            ],
+            [
+              32.208499,
+              48.5635389
+            ],
+            [
+              32.2155033,
+              48.5410969
+            ],
+            [
+              32.169444,
+              48.5388314
+            ],
+            [
+              32.1831256,
+              48.5202697
+            ],
+            [
+              32.1050045,
+              48.5159908
+            ]
+          ]
+        ]
+      },
+      "id": "relation/2825228"
+    }
+  ]
+}
