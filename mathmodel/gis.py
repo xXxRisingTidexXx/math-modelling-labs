@@ -1,8 +1,9 @@
 from json import loads
 from pathlib import Path
-from typing import Any, Dict, List, Iterable
+from typing import Any, Dict, List, Iterable, Tuple, Optional
 from plotly.graph_objs import Figure, Scatter
 from numpy import array
+from shapely.geometry import shape
 
 
 def main():
@@ -35,7 +36,10 @@ def main():
     ]
     figure = Figure()
     for layer in layers:
-        figure.add_traces(layer.scatters())
+        scatters, annotations = layer.render()
+        figure.add_traces(scatters)
+        for annotation in annotations:
+            figure.add_annotation(**annotation)
     figure.update_layout(plot_bgcolor='rgba(0,0,0,0)', showlegend=False)
     figure.update_xaxes(
         showline=True,
@@ -87,14 +91,20 @@ class Layer:
         self._inner_line_color = inner_line_color
         self._inner_line_width = inner_line_width
 
-    def scatters(self) -> List[Scatter]:
+    def render(self) -> Tuple[List[Scatter], List[Dict[str, Any]]]:
         with open(self._path) as stream:
             content = stream.read()
-        return [
-            s
-            for f in loads(content)['features']
-            for s in self._flatten(f['geometry'])
-        ]
+        features = loads(content)['features']
+        return (
+            [
+                s
+                for f in features
+                for s in self._flatten(f['geometry'])
+            ],
+            []
+            if not self._is_named
+            else [a for a in map(self._annotate, features) if a]
+        )
 
     def _flatten(self, geometry: Dict[str, Any]) -> Iterable[Scatter]:
         if geometry['type'] == 'Polygon':
@@ -152,6 +162,23 @@ class Layer:
             )
             for i, r in enumerate(map(array, coordinates))
         )
+
+    @staticmethod
+    def _annotate(feature: Dict[str, Any]) -> Optional[Dict[str, Any]]:
+        name = feature['properties'].get('name', '')
+        if name == '':
+            return None
+        bounds = shape(feature['geometry']).bounds
+        return {
+            'text': name,
+            'x': (bounds[0] + bounds[2]) / 2,
+            'y': bounds[3],
+            'showarrow': False,
+            'arrowhead': 0,
+            'ax': 0,
+            'ay': 0,
+            'font': {'size': 7}
+        }
 
 
 if __name__ == '__main__':
