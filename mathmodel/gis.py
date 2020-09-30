@@ -1,3 +1,4 @@
+from argparse import ArgumentParser, ArgumentTypeError
 from json import loads
 from pathlib import Path
 from typing import Any, Dict, List, Iterable, Tuple, Optional
@@ -6,7 +7,21 @@ from numpy import array
 from shapely.geometry import shape
 
 
-def main():
+def str2bool(value):
+    """
+    Функція-конвертер аргументу консолі з рядкової в логічну величину.
+    """
+    if isinstance(value, bool):
+        return value
+    if value.lower() in {'yes', 'true', 't', 'y', '1'}:
+        return True
+    elif value.lower() in {'no', 'false', 'f', 'n', '0'}:
+        return False
+    else:
+        raise ArgumentTypeError('Boolean value expected.')
+
+
+def main(is_oblasts_filled: bool, is_roads_visible: bool):
     """
     Головна функція програми, яка виконує малювання (рендеринг) карти. Вона
     почергово створює усі необхідні рівні в порядку накладання - області,
@@ -24,6 +39,7 @@ def main():
     layers = [
         Layer(
             'oblasts',
+            is_filled=is_oblasts_filled,
             outer_fill_color='#ebf2e7',
             outer_line_color='#b46198',
             outer_line_width=2
@@ -46,7 +62,12 @@ def main():
             inner_line_color='#2a5eea',
             inner_line_width=1
         ),
-        Layer('roads', outer_line_color='#ffb732', outer_line_width=2)
+        Layer(
+            'roads',
+            is_visible=is_roads_visible,
+            outer_line_color='#ffb732',
+            outer_line_width=2
+        )
     ]
     figure = Figure()
     for layer in layers:
@@ -81,6 +102,8 @@ class Layer:
     """
     __slots__ = [
         '_path',
+        '_is_visible',
+        '_is_filled',
         '_is_named',
         '_outer_fill_color',
         '_outer_line_color',
@@ -94,6 +117,8 @@ class Layer:
     def __init__(
         self,
         name: str,
+        is_visible: bool = True,
+        is_filled: bool = True,
         is_named: bool = False,
         outer_fill_color: str = '#fff',
         outer_line_color: str = '#fff',
@@ -107,6 +132,8 @@ class Layer:
         заливки й стилів кордонів зовнішнього й внутрішніх кілець полігонів.
         """
         self._path = self._root_dir / f'layers/{name}.geojson'
+        self._is_visible = is_visible
+        self._is_filled = is_filled
         self._is_named = is_named
         self._outer_fill_color = outer_fill_color
         self._outer_line_color = outer_line_color
@@ -120,6 +147,8 @@ class Layer:
         "Лінивий" метод малювання об'єктів шару. Створює множину полігонів відповідно до
         координат кілець й додає текстові анотації над сутностями, наприклад, містами.
         """
+        if not self._is_visible:
+            return [], []
         with open(self._path) as stream:
             content = stream.read()
         features = loads(content)['features']
@@ -194,7 +223,7 @@ class Layer:
                 hoverinfo='skip',
                 fillcolor=(
                     self._outer_fill_color
-                    if i == 0 else
+                    if i == 0 and self._is_filled else
                     self._inner_fill_color
                 ),
                 line={
@@ -239,4 +268,27 @@ class Layer:
 
 
 if __name__ == '__main__':
-    main()
+    # Для керування рендерингом використовуються CLI-опції.
+    parser = ArgumentParser(
+        description='Renders interactive GIS of Dnipropetrovska oblast\''
+    )
+    # Цей прапор вимикає заповнення областей кольором.
+    parser.add_argument(
+        '-o',
+        type=str2bool,
+        default=False,
+        help='disable oblast filling',
+        nargs='?',
+        const=True
+    )
+    # А цей приховує дороги, аби прискорити малювання.
+    parser.add_argument(
+        '-r',
+        type=str2bool,
+        default=False,
+        help='disable road rendering',
+        nargs='?',
+        const=True
+    )
+    args = parser.parse_args()
+    main(not args.o, not args.r)
