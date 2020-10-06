@@ -6,3 +6,4 @@ tabulate
 shapely
 matplotlib
 area
+opencv-python
