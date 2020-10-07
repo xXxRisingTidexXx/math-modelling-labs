@@ -214,9 +214,6 @@ def no_graph():
 
 
 if __name__ == '__main__':
-    parser = ArgumentParser(description='Interactive spatial graphs and illustrations')
-    parser.add_argument('-g', default='frame-plane-2d', help='graph name')
-    args = parser.parse_args()
     graphs = {
         'frame-plane-2d': frame_plane_2d,
         'frame-plane-3d': frame_plane_3d,
@@ -226,4 +223,11 @@ if __name__ == '__main__':
         'surface-cylinder': surface_cylinder,
         'surface-cone-dual': surface_cone_dual
     }
+    parser = ArgumentParser(description='Interactive spatial graphs and illustrations')
+    parser.add_argument(
+        '-g',
+        default='frame-plane-2d',
+        help=f'graph name (available ones: {", ".join(graphs.keys())})'
+    )
+    args = parser.parse_args()
     graphs.get(args.g, no_graph)()
