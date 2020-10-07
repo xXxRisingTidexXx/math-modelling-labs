@@ -54,7 +54,7 @@ def frame_plane_3d():
         Scatter3d(
             x=shape[:, 0],
             y=shape[:, 1],
-            z=full((len(shape), 1), 0),
+            z=full((len(shape),), 0),
             mode='lines',
             hoverinfo='skip',
             line={'color': 'red'}
@@ -149,7 +149,7 @@ def surface_cone():
         Mesh3d(
             x=hstack((x, [(amin(x) + amax(x)) / 2])),
             y=hstack((y, [(amin(y) + amax(y)) / 2])),
-            z=hstack((full((len(shape), 1), 0), [30])),
+            z=hstack((full((len(shape),), 0), [30])),
             i=ijk[:, 0],
             j=ijk[:, 1],
             k=ijk[:, 2],
