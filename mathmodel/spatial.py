@@ -8,8 +8,9 @@ from cv2 import (
     imread, COLOR_BGR2GRAY, RETR_TREE, CHAIN_APPROX_SIMPLE, cvtColor, threshold,
     findContours
 )
-from shapely.geometry import Polygon, Point
+from shapely.geometry import Polygon, Point, LineString
 from random import uniform
+from scipy.spatial import Delaunay
 
 
 def frame_plane_2d():
@@ -90,7 +91,7 @@ def surface_sphere():
     shape = contour()
     polygon = Polygon(shape)
     min_x, min_y, max_x, max_y = polygon.bounds
-    x, y, z = inflate(
+    delaunay = Delaunay(
         vstack(
             (
                 shape,
@@ -106,18 +107,37 @@ def surface_sphere():
             )
         )
     )
+    x, y, z = inflate(delaunay.points)
+    ijk = array(
+        [
+            t for t in delaunay.simplices if is_included(delaunay.points[t], polygon)  # noqa
+        ]
+    )
     figure.add_trace(
         Mesh3d(
             x=x,
             y=y,
             z=z,
-            alphahull=-1,
+            i=ijk[:, 0],
+            j=ijk[:, 1],
+            k=ijk[:, 2],
             opacity=0.4,
             color='red',
             hoverinfo='skip'
         )
     )
     figure.show()
+
+
+def is_included(triangle: ndarray, polygon: Polygon) -> bool:
+    return all(
+        polygon.contains(ls) or polygon.exterior.contains(ls)
+        for ls in
+        (
+            LineString([triangle[i], triangle[(i + 1) % len(triangle)]])
+            for i in range(len(triangle))
+        )
+    )
 
 
 def surface_cone():
