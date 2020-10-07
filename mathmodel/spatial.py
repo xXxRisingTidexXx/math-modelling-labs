@@ -1,10 +1,12 @@
 from argparse import ArgumentParser
-from numpy import sqrt, full, reshape, append, ndarray
+from numpy import sqrt, full, reshape, append, ndarray, hstack, vstack
 from plotly.graph_objs import Scatter, Scatter3d, Mesh3d, Figure
 from cv2 import (
     imread, COLOR_BGR2GRAY, RETR_TREE, CHAIN_APPROX_SIMPLE, cvtColor, threshold,
     findContours
 )
+from shapely.geometry import Polygon, Point
+from random import uniform
 
 
 def frame_plane_2d(shape: ndarray):
@@ -38,15 +40,13 @@ def frame_plane_3d(shape: ndarray):
 
 
 def frame_sphere(shape: ndarray):
-    r = 50
-    x, y, z = shape[:, 0], shape[:, 1], full((shape.shape[0],), 20)
-    k = r / sqrt(x ** 2 + y ** 2 + (z + r) ** 2)
     figure = Figure()
+    points = inflate(shape)
     figure.add_trace(
         Scatter3d(
-            x=x * k,
-            y=y * k,
-            z=z * k,
+            x=points[:, 0],
+            y=points[:, 1],
+            z=points[:, 2],
             mode='lines',
             hoverinfo='skip',
             line={'color': 'red'}
@@ -55,14 +55,48 @@ def frame_sphere(shape: ndarray):
     figure.show()
 
 
+def inflate(shape: ndarray) -> ndarray:
+    r = 50
+    x, y, z = shape[:, 0], shape[:, 1], full((shape.shape[0],), 20)
+    k = r / sqrt(x ** 2 + y ** 2 + (z + r) ** 2)
+    dimensions = (-1, 1)
+    return hstack(
+        (
+            reshape(x * k, dimensions),
+            reshape(y * k, dimensions),
+            reshape(z * k, dimensions)
+        )
+    )
+
+
 def surface_sphere(shape: ndarray):
     figure = Figure()
+    polygon = Polygon(shape)
+    min_x, min_y, max_x, max_y = polygon.bounds
+    points = inflate(
+        vstack(
+            (
+                shape,
+                [
+                    [p.x, p.y]
+                    for p in (
+                        Point(uniform(min_x, max_x), uniform(min_y, max_y))
+                        for _ in range(1000)
+                    )
+                    if p.within(polygon)
+                ]
+            )
+        )
+    )
     figure.add_trace(
         Mesh3d(
-            x=shape[:, 0],
-            y=shape[:, 1],
-            z=shape[:, 2],
-            alphahull=1
+            x=points[:, 0],
+            y=points[:, 1],
+            z=points[:, 2],
+            alphahull=-1,
+            opacity=0.4,
+            color='red',
+            hoverinfo='skip'
         )
     )
     figure.show()
@@ -82,7 +116,7 @@ if __name__ == '__main__':
         'frame-sphere': frame_sphere,
         'surface-sphere': surface_sphere
     }
-    points = max(
+    contour = max(
         findContours(
             threshold(
                 cvtColor(imread('images/shape.png'), COLOR_BGR2GRAY),
@@ -95,5 +129,5 @@ if __name__ == '__main__':
         )[0],
         key=len
     )
-    points = reshape(points, (points.shape[0], 2))
-    graphs.get(args.g, no_graph)(append(points, points[:1], axis=0))
+    contour = reshape(contour, (contour.shape[0], 2))
+    graphs.get(args.g, no_graph)(append(contour, contour[:1], axis=0))
