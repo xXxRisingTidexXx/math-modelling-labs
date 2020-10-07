@@ -1,7 +1,7 @@
 from argparse import ArgumentParser
 from typing import Tuple
 from numpy import (
-    sqrt, full, reshape, ndarray, hstack, vstack, amin, amax, array, repeat
+    sqrt, full, reshape, ndarray, hstack, vstack, amin, amax, array, repeat, tile
 )
 from plotly.graph_objs import Scatter, Scatter3d, Mesh3d, Figure
 from cv2 import (
@@ -163,33 +163,24 @@ def surface_cone():
 
 def surface_cylinder():
     figure = Figure()
-    shape = contour(False)
+    shape = repeat(contour(False), 2, 0)
     ijk = array(
-        [
-            t
-            for p in (pair(i, len(shape)) for i in range(len(shape)))
-            for t in p
-        ]
+        [[i, (i + 1) % len(shape), (i + 2) % len(shape)] for i in range(len(shape))]
     )
     figure.add_trace(
         Mesh3d(
-            x=repeat(shape[:, 0], 2, 0),
-            y=repeat(shape[:, 1], 2, 0),
-            z=hstack((full((len(shape), 1), 0), full((len(shape), 1), 10))),
+            x=shape[:, 0],
+            y=shape[:, 1],
+            z=tile([0, 10], len(shape) // 2),
             i=ijk[:, 0],
             j=ijk[:, 1],
             k=ijk[:, 2],
-            opacity=0.4,
             color='red',
+            opacity=0.4,
             hoverinfo='skip'
         )
     )
     figure.show()
-
-
-def pair(i: int, n: int) -> Tuple[Tuple[int, int, int], Tuple[int, int, int]]:
-    j = (i + 1) % n
-    return (i, j, i + n), (j, i + n, j + n)
 
 
 def surface_cone_dual():
