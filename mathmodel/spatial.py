@@ -1,5 +1,8 @@
 from argparse import ArgumentParser
-from numpy import sqrt, full, reshape, ndarray, hstack, vstack, amin, amax, array
+from typing import Tuple
+from numpy import (
+    sqrt, full, reshape, ndarray, hstack, vstack, amin, amax, array, repeat
+)
 from plotly.graph_objs import Scatter, Scatter3d, Mesh3d, Figure
 from cv2 import (
     imread, COLOR_BGR2GRAY, RETR_TREE, CHAIN_APPROX_SIMPLE, cvtColor, threshold,
@@ -45,32 +48,28 @@ def contour(is_closed=True) -> ndarray:
 
 def frame_plane_3d():
     figure = Figure()
-    shape = zaxis(contour())
+    shape = contour()
     figure.add_trace(
         Scatter3d(
             x=shape[:, 0],
             y=shape[:, 1],
-            z=shape[:, 2],
+            z=full((len(shape), 1), 0),
             mode='lines',
             hoverinfo='skip',
             line={'color': 'red'}
         )
     )
     figure.show()
-
-
-def zaxis(shape: ndarray, value: float = 0) -> ndarray:
-    return hstack((shape, full((len(shape), 1), value)))
 
 
 def frame_sphere():
     figure = Figure()
-    shape = inflate(contour())
+    x, y, z = inflate(contour())
     figure.add_trace(
         Scatter3d(
-            x=shape[:, 0],
-            y=shape[:, 1],
-            z=shape[:, 2],
+            x=x,
+            y=y,
+            z=z,
             mode='lines',
             hoverinfo='skip',
             line={'color': 'red'}
@@ -79,18 +78,11 @@ def frame_sphere():
     figure.show()
 
 
-def inflate(shape: ndarray) -> ndarray:
+def inflate(shape: ndarray) -> Tuple[ndarray, ndarray, ndarray]:
     r = 50
     x, y, z = shape[:, 0], shape[:, 1], full((shape.shape[0],), 20)
     k = r / sqrt(x ** 2 + y ** 2 + (z + r) ** 2)
-    dimensions = (-1, 1)
-    return hstack(
-        (
-            reshape(x * k, dimensions),
-            reshape(y * k, dimensions),
-            reshape(z * k, dimensions)
-        )
-    )
+    return x * k, y * k, z * k
 
 
 def surface_sphere():
@@ -98,7 +90,7 @@ def surface_sphere():
     shape = contour()
     polygon = Polygon(shape)
     min_x, min_y, max_x, max_y = polygon.bounds
-    shape = inflate(
+    x, y, z = inflate(
         vstack(
             (
                 shape,
@@ -116,9 +108,9 @@ def surface_sphere():
     )
     figure.add_trace(
         Mesh3d(
-            x=shape[:, 0],
-            y=shape[:, 1],
-            z=shape[:, 2],
+            x=x,
+            y=y,
+            z=z,
             alphahull=-1,
             opacity=0.4,
             color='red',
@@ -130,14 +122,14 @@ def surface_sphere():
 
 def surface_cone():
     figure = Figure()
-    shape = zaxis(contour(False))
+    shape = contour(False)
     x, y = shape[:, 0], shape[:, 1]
     ijk = array([[i, (i + 1) % len(shape), len(shape)] for i in range(len(shape))])
     figure.add_trace(
         Mesh3d(
             x=hstack((x, [(amin(x) + amax(x)) / 2])),
             y=hstack((y, [(amin(y) + amax(y)) / 2])),
-            z=hstack((shape[:, 2], [30])),
+            z=hstack((full((len(shape), 1), 0), [30])),
             i=ijk[:, 0],
             j=ijk[:, 1],
             k=ijk[:, 2],
@@ -155,23 +147,15 @@ def surface_cylinder():
     ijk = array(
         [
             t
-            for p in
-            (
-                (
-                    [i, i + 1, i + len(shape)],
-                    [i + 1, i + len(shape), i + 1 + len(shape)]
-                )
-                for i in range(len(shape))
-            )
+            for p in (pair(i, len(shape)) for i in range(len(shape)))
             for t in p
         ]
     )
-    shape = vstack((zaxis(shape), zaxis(shape, 10)))
     figure.add_trace(
         Mesh3d(
-            x=shape[:, 0],
-            y=shape[:, 1],
-            z=shape[:, 2],
+            x=repeat(shape[:, 0], 2, 0),
+            y=repeat(shape[:, 1], 2, 0),
+            z=hstack((full((len(shape), 1), 0), full((len(shape), 1), 10))),
             i=ijk[:, 0],
             j=ijk[:, 1],
             k=ijk[:, 2],
@@ -181,6 +165,11 @@ def surface_cylinder():
         )
     )
     figure.show()
+
+
+def pair(i: int, n: int) -> Tuple[Tuple[int, int, int], Tuple[int, int, int]]:
+    j = (i + 1) % n
+    return (i, j, i + n), (j, i + n, j + n)
 
 
 def surface_cone_dual():
