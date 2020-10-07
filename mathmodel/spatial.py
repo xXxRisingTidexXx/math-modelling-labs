@@ -1,5 +1,5 @@
 from argparse import ArgumentParser
-from numpy import sqrt, full, reshape, append, ndarray, hstack, vstack
+from numpy import sqrt, full, reshape, ndarray, hstack, vstack
 from plotly.graph_objs import Scatter, Scatter3d, Mesh3d, Figure
 from cv2 import (
     imread, COLOR_BGR2GRAY, RETR_TREE, CHAIN_APPROX_SIMPLE, cvtColor, threshold,
@@ -9,8 +9,9 @@ from shapely.geometry import Polygon, Point
 from random import uniform
 
 
-def frame_plane_2d(shape: ndarray):
+def frame_plane_2d():
     figure = Figure()
+    shape = contour()
     figure.add_trace(
         Scatter(
             x=shape[:, 0],
@@ -24,8 +25,27 @@ def frame_plane_2d(shape: ndarray):
     figure.show()
 
 
-def frame_plane_3d(shape: ndarray):
+def contour(is_closed=True) -> ndarray:
+    shape = max(
+        findContours(
+            threshold(
+                cvtColor(imread('images/shape.png'), COLOR_BGR2GRAY),
+                200,
+                255,
+                0
+            )[1],
+            RETR_TREE,
+            CHAIN_APPROX_SIMPLE
+        )[0],
+        key=len
+    )
+    shape = reshape(shape, (shape.shape[0], 2))
+    return vstack((shape, shape[:1])) if is_closed else shape
+
+
+def frame_plane_3d():
     figure = Figure()
+    shape = contour()
     figure.add_trace(
         Scatter3d(
             x=shape[:, 0],
@@ -39,14 +59,14 @@ def frame_plane_3d(shape: ndarray):
     figure.show()
 
 
-def frame_sphere(shape: ndarray):
+def frame_sphere():
     figure = Figure()
-    points = inflate(shape)
+    shape = inflate(contour())
     figure.add_trace(
         Scatter3d(
-            x=points[:, 0],
-            y=points[:, 1],
-            z=points[:, 2],
+            x=shape[:, 0],
+            y=shape[:, 1],
+            z=shape[:, 2],
             mode='lines',
             hoverinfo='skip',
             line={'color': 'red'}
@@ -69,11 +89,12 @@ def inflate(shape: ndarray) -> ndarray:
     )
 
 
-def surface_sphere(shape: ndarray):
+def surface_sphere():
     figure = Figure()
+    shape = contour()
     polygon = Polygon(shape)
     min_x, min_y, max_x, max_y = polygon.bounds
-    points = inflate(
+    shape = inflate(
         vstack(
             (
                 shape,
@@ -90,9 +111,9 @@ def surface_sphere(shape: ndarray):
     )
     figure.add_trace(
         Mesh3d(
-            x=points[:, 0],
-            y=points[:, 1],
-            z=points[:, 2],
+            x=shape[:, 0],
+            y=shape[:, 1],
+            z=shape[:, 2],
             alphahull=-1,
             opacity=0.4,
             color='red',
@@ -102,32 +123,27 @@ def surface_sphere(shape: ndarray):
     figure.show()
 
 
-def no_graph(_: ndarray):
+def surface_cone():
+    figure = Figure()
+
+    figure.show()
+
+
+def no_graph():
     print(f'There\'s no graphs with such a name')
 
 
 if __name__ == '__main__':
-    parser = ArgumentParser(description='Renders interactive spatial graphs')
+    parser = ArgumentParser(description='Interactive spatial graphs and illustrations')
     parser.add_argument('-g', default='frame-plane-2d', help='graph name')
     args = parser.parse_args()
     graphs = {
         'frame-plane-2d': frame_plane_2d,
         'frame-plane-3d': frame_plane_3d,
         'frame-sphere': frame_sphere,
-        'surface-sphere': surface_sphere
+        'surface-sphere': surface_sphere,
+        'surface-cone': no_graph,
+        'surface-cylinder': no_graph,
+        'surface-cone-dual': no_graph
     }
-    contour = max(
-        findContours(
-            threshold(
-                cvtColor(imread('images/shape.png'), COLOR_BGR2GRAY),
-                200,
-                255,
-                0
-            )[1],
-            RETR_TREE,
-            CHAIN_APPROX_SIMPLE
-        )[0],
-        key=len
-    )
-    contour = reshape(contour, (contour.shape[0], 2))
-    graphs.get(args.g, no_graph)(append(contour, contour[:1], axis=0))
+    graphs.get(args.g, no_graph)()
