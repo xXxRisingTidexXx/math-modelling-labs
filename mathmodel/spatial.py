@@ -104,7 +104,8 @@ def surface_sphere():
                 shape,
                 [
                     [p.x, p.y]
-                    for p in (
+                    for p in
+                    (
                         Point(uniform(min_x, max_x), uniform(min_y, max_y))
                         for _ in range(1000)
                     )
@@ -148,6 +149,40 @@ def surface_cone():
     figure.show()
 
 
+def surface_cylinder():
+    figure = Figure()
+    shape = contour(False)
+    ijk = array(
+        [
+            t
+            for p in
+            (
+                (
+                    [i, i + 1, i + len(shape)],
+                    [i + 1, i + len(shape), i + 1 + len(shape)]
+                )
+                for i in range(len(shape))
+            )
+            for t in p
+        ]
+    )
+    shape = vstack((zaxis(shape), zaxis(shape, 10)))
+    figure.add_trace(
+        Mesh3d(
+            x=shape[:, 0],
+            y=shape[:, 1],
+            z=shape[:, 2],
+            i=ijk[:, 0],
+            j=ijk[:, 1],
+            k=ijk[:, 2],
+            opacity=0.4,
+            color='red',
+            hoverinfo='skip'
+        )
+    )
+    figure.show()
+
+
 def no_graph():
     print(f'There\'s no graphs with such a name')
 
@@ -162,7 +197,7 @@ if __name__ == '__main__':
         'frame-sphere': frame_sphere,
         'surface-sphere': surface_sphere,
         'surface-cone': surface_cone,
-        'surface-cylinder': no_graph,
+        'surface-cylinder': surface_cylinder,
         'surface-cone-dual': no_graph
     }
     graphs.get(args.g, no_graph)()
