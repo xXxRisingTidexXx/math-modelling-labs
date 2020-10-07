@@ -132,7 +132,7 @@ def surface_cone():
     figure = Figure()
     shape = zaxis(contour(False))
     x, y = shape[:, 0], shape[:, 1]
-    ijk = array([[i, i + 1, len(shape)] for i in range(len(shape))])
+    ijk = array([[i, (i + 1) % len(shape), len(shape)] for i in range(len(shape))])
     figure.add_trace(
         Mesh3d(
             x=hstack((x, [(amin(x) + amax(x)) / 2])),
@@ -183,6 +183,32 @@ def surface_cylinder():
     figure.show()
 
 
+def surface_cone_dual():
+    figure = Figure()
+    shape = contour(False)
+    x, y = shape[:, 0], shape[:, 1]
+    ijk = array(
+        [
+            [j + i * len(shape), (j + 1) % len(shape) + i * len(shape), 2 * len(shape)]
+            for i in range(2) for j in range(len(shape))
+        ]
+    )
+    figure.add_trace(
+        Mesh3d(
+            x=hstack((x, x, [(amin(x) + amax(x)) / 2])),
+            y=hstack((y, y, [(amin(y) + amax(y)) / 2])),
+            z=hstack((full((len(shape),), 30), full((len(shape),), -30), [0])),
+            i=ijk[:, 0],
+            j=ijk[:, 1],
+            k=ijk[:, 2],
+            opacity=0.4,
+            color='red',
+            hoverinfo='skip'
+        )
+    )
+    figure.show()
+
+
 def no_graph():
     print(f'There\'s no graphs with such a name')
 
@@ -198,6 +224,6 @@ if __name__ == '__main__':
         'surface-sphere': surface_sphere,
         'surface-cone': surface_cone,
         'surface-cylinder': surface_cylinder,
-        'surface-cone-dual': no_graph
+        'surface-cone-dual': surface_cone_dual
     }
     graphs.get(args.g, no_graph)()
