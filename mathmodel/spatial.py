@@ -1,5 +1,5 @@
 from argparse import ArgumentParser
-from numpy import sqrt, full, reshape, ndarray, hstack, vstack
+from numpy import sqrt, full, reshape, ndarray, hstack, vstack, amin, amax, array
 from plotly.graph_objs import Scatter, Scatter3d, Mesh3d, Figure
 from cv2 import (
     imread, COLOR_BGR2GRAY, RETR_TREE, CHAIN_APPROX_SIMPLE, cvtColor, threshold,
@@ -45,18 +45,22 @@ def contour(is_closed=True) -> ndarray:
 
 def frame_plane_3d():
     figure = Figure()
-    shape = contour()
+    shape = zaxis(contour())
     figure.add_trace(
         Scatter3d(
             x=shape[:, 0],
             y=shape[:, 1],
-            z=full((shape.shape[0],), 20),
+            z=shape[:, 2],
             mode='lines',
             hoverinfo='skip',
             line={'color': 'red'}
         )
     )
     figure.show()
+
+
+def zaxis(shape: ndarray, value: float = 0) -> ndarray:
+    return hstack((shape, full((len(shape), 1), value)))
 
 
 def frame_sphere():
@@ -125,7 +129,22 @@ def surface_sphere():
 
 def surface_cone():
     figure = Figure()
-
+    shape = zaxis(contour(False))
+    x, y = shape[:, 0], shape[:, 1]
+    ijk = array([[i, i + 1, len(shape)] for i in range(len(shape))])
+    figure.add_trace(
+        Mesh3d(
+            x=hstack((x, [(amin(x) + amax(x)) / 2])),
+            y=hstack((y, [(amin(y) + amax(y)) / 2])),
+            z=hstack((shape[:, 2], [30])),
+            i=ijk[:, 0],
+            j=ijk[:, 1],
+            k=ijk[:, 2],
+            opacity=0.4,
+            color='red',
+            hoverinfo='skip'
+        )
+    )
     figure.show()
 
 
@@ -142,7 +161,7 @@ if __name__ == '__main__':
         'frame-plane-3d': frame_plane_3d,
         'frame-sphere': frame_sphere,
         'surface-sphere': surface_sphere,
-        'surface-cone': no_graph,
+        'surface-cone': surface_cone,
         'surface-cylinder': no_graph,
         'surface-cone-dual': no_graph
     }
