@@ -1,7 +1,6 @@
 from argparse import ArgumentParser
-from typing import Tuple
 from numpy import (
-    sqrt, full, reshape, ndarray, hstack, vstack, amin, amax, array, repeat, tile
+    full, reshape, ndarray, hstack, vstack, amin, amax, array, repeat, tile, zeros
 )
 from plotly.graph_objs import Scatter, Scatter3d, Mesh3d, Figure
 from cv2 import (
@@ -11,6 +10,8 @@ from cv2 import (
 from shapely.geometry import Polygon, Point, LineString
 from random import uniform
 from scipy.spatial import Delaunay
+
+from mathmodel.utils import inflate
 
 
 def frame_plane_2d():
@@ -66,7 +67,7 @@ def frame_plane_3d():
         Scatter3d(
             x=shape[:, 0],
             y=shape[:, 1],
-            z=full((len(shape),), 0),
+            z=zeros((len(shape),)),
             mode='lines',
             hoverinfo='skip',
             line={'color': 'red'}
@@ -93,16 +94,6 @@ def frame_sphere():
         )
     )
     figure.show()
-
-
-def inflate(shape: ndarray) -> Tuple[ndarray, ndarray, ndarray]:
-    """
-    Логіка "набухання" отриманої 2D-фігури.
-    """
-    r = 50
-    x, y, z = shape[:, 0], shape[:, 1], full((shape.shape[0],), 20)
-    k = r / sqrt(x ** 2 + y ** 2 + (z + r) ** 2)
-    return x * k, y * k, z * k
 
 
 def surface_sphere():
