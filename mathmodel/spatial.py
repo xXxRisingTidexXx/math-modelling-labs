@@ -7,11 +7,7 @@ from cv2 import (
     imread, COLOR_BGR2GRAY, RETR_TREE, CHAIN_APPROX_SIMPLE, cvtColor, threshold,
     findContours
 )
-from shapely.geometry import Polygon, Point, LineString
-from random import uniform
-from scipy.spatial import Delaunay
-
-from mathmodel.utils import inflate
+from mathmodel.utils import inflate, mesh
 
 
 def frame_plane_2d():
@@ -114,60 +110,21 @@ def surface_sphere():
     кутуватість обгортки буде згладженою і непомітною.
     """
     figure = Figure()
-    shape = contour()
-    polygon = Polygon(shape)
-    min_x, min_y, max_x, max_y = polygon.bounds
-    delaunay = Delaunay(
-        vstack(
-            (
-                shape,
-                [
-                    [p.x, p.y]
-                    for p in
-                    (
-                        Point(uniform(min_x, max_x), uniform(min_y, max_y))
-                        for _ in range(1000)
-                    )
-                    if p.within(polygon)
-                ]
-            )
-        )
-    )
-    x, y, z = inflate(delaunay.points)
-    ijk = array(
-        [
-            t for t in delaunay.simplices if is_included(delaunay.points[t], polygon)  # noqa
-        ]
-    )
+    x, y, z, i, j, k = mesh(contour())
     figure.add_trace(
         Mesh3d(
             x=x,
             y=y,
             z=z,
-            i=ijk[:, 0],
-            j=ijk[:, 1],
-            k=ijk[:, 2],
+            i=i,
+            j=j,
+            k=k,
             opacity=0.4,
             color='red',
             hoverinfo='skip'
         )
     )
     figure.show()
-
-
-def is_included(triangle: ndarray, polygon: Polygon) -> bool:
-    """
-    Ця невеличка утилітна функція необхідна для визначення того, чиварто включати даний
-    трикутник у базовий полігон і результуючу теселяцію.
-    """
-    return all(
-        polygon.contains(ls) or polygon.exterior.contains(ls)
-        for ls in
-        (
-            LineString([triangle[i], triangle[(i + 1) % len(triangle)]])
-            for i in range(len(triangle))
-        )
-    )
 
 
 def surface_cone():

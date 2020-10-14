@@ -2,8 +2,9 @@ from json import loads
 from pathlib import Path
 from typing import Any, Dict, List, Iterable, Tuple, Optional, Union
 from plotly.graph_objs import Scatter, Mesh3d, Scatter3d
-from numpy import array
+from numpy import array, ndarray
 from shapely.geometry import shape
+from mathmodel.utils import inflate, mesh
 
 
 class Layer:
@@ -43,8 +44,8 @@ class Layer:
         inner_fill_color: str = '#fff',
         inner_line_color: str = '#fff',
         inner_line_width: int = 0,
-        dx: float = 36.91,
-        dy: float = 48.25,
+        dx: float = 36.8,
+        dy: float = 48.1,
         r: float = 100,
         z: float = 1
     ):
@@ -81,14 +82,14 @@ class Layer:
             [
                 s
                 for f in features
-                for s in self._flatten(f['geometry'])
+                for s in self._flatten2d(f['geometry'])
             ],
             []
             if not self._is_named
             else [a for a in map(self._annotate, features) if a]
         )
 
-    def _flatten(self, geometry: Dict[str, Any]) -> Iterable[Scatter]:
+    def _flatten2d(self, geometry: Dict[str, Any]) -> Iterable[Scatter]:
         """
         Робить "розгортання" заданого геометричного об'єкта в залежності від вказаного
         типу. Polygon (багатокутник, що може містити порожнини всередині, як бублик) та
@@ -103,33 +104,18 @@ class Layer:
         піддаються точковому спрощенню.
         """
         if geometry['type'] == 'Polygon':
-            return self._polygonize(geometry['coordinates'])
+            return self._polygon2d(geometry['coordinates'])
         if geometry['type'] == 'MultiPolygon':
             return (
                 s
                 for c in geometry['coordinates']
-                for s in self._polygonize(c)
+                for s in self._polygon2d(c)
             )
         if geometry['type'] == 'LineString':
-            coordinates = array(geometry['coordinates'])
-            return [
-                Scatter(
-                    x=coordinates[:, 0],
-                    y=coordinates[:, 1],
-                    mode='lines',
-                    hoverinfo='skip',
-                    line={
-                        'color': self._outer_line_color,
-                        'width': self._outer_line_width
-                    }
-                )
-            ]
+            return [self._line2d(geometry['coordinates'])]
         return []
 
-    def _polygonize(
-        self,
-        coordinates: List[List[List[float]]]
-    ) -> Iterable[Scatter]:
+    def _polygon2d(self, coordinates: List[List[List[float]]]) -> Iterable[Scatter]:
         """
         Даний метод здійснює "ліниву" полігонізацію заданого багатокутника, перетворюючи
         список матриць координат на графічні об'єкти. В основі лежить застосування
@@ -167,6 +153,19 @@ class Layer:
             for i, r in enumerate(map(array, coordinates))
         )
 
+    def _line2d(self, coordinates: List[List[float]]) -> Scatter:
+        """
+        TODO
+        """
+        points = array(coordinates)
+        return Scatter(
+            x=points[:, 0],
+            y=points[:, 1],
+            mode='lines',
+            hoverinfo='skip',
+            line={'color': self._outer_line_color, 'width': self._outer_line_width}
+        )
+
     @staticmethod
     def _annotate(feature: Dict[str, Any]) -> Optional[Dict[str, Any]]:
         """
@@ -192,6 +191,9 @@ class Layer:
         }
 
     def render3d(self) -> List[Union[Mesh3d, Scatter3d]]:
+        """
+        TODO
+        """
         if not self._is_visible:
             return []
         with open(self._path) as stream:
@@ -200,8 +202,64 @@ class Layer:
         return [
             s
             for f in features
-            for s in self._unpack(f['geometry'])
+            for s in self._flatten3d(f['geometry'])
         ]
 
-    def _unpack(self, geometry: Dict[str, Any]) -> Iterable[Union[Mesh3d, Scatter3d]]:
-        pass
+    def _flatten3d(self, geometry: Dict[str, Any]) -> Iterable[Union[Mesh3d, Scatter3d]]:
+        """
+        TODO
+        """
+        if geometry['type'] == 'Polygon':
+            return self._polygon3d(geometry['coordinates'][0])
+        if geometry['type'] == 'MultiPolygon':
+            return (
+                s
+                for c in geometry['coordinates']
+                for s in self._polygon3d(c[0])
+            )
+        if geometry['type'] == 'LineString':
+            return [self._line3d(self._array(geometry['coordinates']))]
+        return []
+
+    def _polygon3d(self, coordinates: List[List[float]]) -> Tuple[Mesh3d, Scatter3d]:
+        """
+        TODO
+        """
+        points = self._array(coordinates)
+        x, y, z, i, j, k = mesh(points, r=self._r, z=self._z)
+        return (
+            Mesh3d(
+                x=x,
+                y=y,
+                z=z,
+                i=i,
+                j=j,
+                k=k,
+                color=self._outer_fill_color,
+                hoverinfo='skip'
+            ),
+            self._line3d(points)
+        )
+
+    def _array(self, coordinates: List[List[float]]) -> ndarray:
+        """
+        TODO
+        """
+        points = array(coordinates)
+        points[:, 0] -= self._dx
+        points[:, 1] -= self._dy
+        return points
+
+    def _line3d(self, points: ndarray) -> Scatter3d:
+        """
+        TODO
+        """
+        x, y, z = inflate(points, r=self._r, z=self._z)
+        return Scatter3d(
+            x=x,
+            y=y,
+            z=z,
+            mode='lines',
+            hoverinfo='skip',
+            line={'color': self._outer_line_color, 'width': self._outer_line_width}
+        )
