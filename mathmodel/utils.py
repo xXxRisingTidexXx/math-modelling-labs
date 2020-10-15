@@ -24,7 +24,8 @@ def mesh(
     z: float = 20
 ) -> Tuple[ndarray, ndarray, ndarray, ndarray, ndarray, ndarray]:
     """
-    TODO
+    Функція, яка заповнює заданий контур випадковими точками й проектує
+    отриману поверхню на сферу з допомогою триангуляції Делоне.
     """
     polygon = Polygon(shape)
     min_x, min_y, max_x, max_y = polygon.bounds
@@ -47,7 +48,9 @@ def mesh(
     x, y, z = inflate(delaunay.points, r=r, z=z)
     ijk = array(
         [
-            t for t in delaunay.simplices if _is_included(delaunay.points[t], polygon)  # noqa
+            t
+            for t in delaunay.simplices
+            if _is_included(delaunay.points[t], polygon)  # noqa
         ]
     )
     return x, y, z, ijk[:, 0], ijk[:, 1], ijk[:, 2]
@@ -55,8 +58,8 @@ def mesh(
 
 def _is_included(triangle: ndarray, polygon: Polygon) -> bool:
     """
-    Ця невеличка утилітна функція необхідна для визначення того, чиварто включати даний
-    трикутник у базовий полігон і результуючу теселяцію.
+    Ця невеличка утилітна функція необхідна для визначення того, чиварто
+    включати даний трикутник у базовий полігон і результуючу теселяцію.
     """
     return all(
         polygon.contains(ls) or polygon.exterior.contains(ls)
