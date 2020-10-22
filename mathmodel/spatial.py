@@ -215,7 +215,7 @@ def no_graph():
     """
     "Порожній граф", чиє повідомлення виводиться на stdout.
     """
-    print(f'There\'s no graphs with such a name')
+    print(f'There\'re no graphs with such a name')
 
 
 if __name__ == '__main__':
