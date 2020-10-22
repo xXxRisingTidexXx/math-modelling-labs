@@ -1,6 +1,6 @@
 from argparse import ArgumentParser
 from typing import Callable, Any, Tuple
-from numpy import ndarray, array, full
+from numpy import ndarray, array, full, abs
 from plotly.subplots import make_subplots
 from plotly.graph_objs import Scatter3d
 from scipy.integrate import solve_ivp
@@ -10,7 +10,8 @@ def main(f: Callable[[Any, ndarray], ndarray]):
     """
     Ключова функція візуалізації вирішень ЗДУ. В якості методів присутні 3 вбудовані
     механізми - метод Рунге-Кутта порядку 3(2), порядку 5(4) і порядку 8 - й 1
-    самописний спосіб через метод Ейлера.
+    самописний спосіб через метод Ейлера. P.S. початкова точка була дещо змінена
+    відносно початкового завдання, це необхідно для деяких адекватних графіків.
     """
     spec = {'type': 'scene'}
     figure = make_subplots(
@@ -20,7 +21,7 @@ def main(f: Callable[[Any, ndarray], ndarray]):
         horizontal_spacing=0.02,
         vertical_spacing=0.02
     )
-    span, y0 = (0, 150), array([0.0, 0.0, 1.0])
+    span, y0 = (0.0, 150.0), array([-0.8, 0.8, 0.8])
     rk23 = solve_ivp(f, span, y0, 'RK23')
     figure.add_trace(
         Scatter3d(
@@ -60,7 +61,7 @@ def main(f: Callable[[Any, ndarray], ndarray]):
         row=2,
         col=1
     )
-    euler = solve_ivp_euler(f, span, array([1.0, 1.0, 1.0]))
+    euler = solve_ivp_euler(f, span, y0)
     figure.add_trace(
         Scatter3d(
             name='Euler',
@@ -94,14 +95,29 @@ def solve_ivp_euler(
 
 def rossler(_, y: ndarray) -> ndarray:
     """
-    Функція правих частинь рівнянь атрактора Рьослера.
+    Функція правих частинь рівнянь атрактора Рьослера:
+    https://en.wikipedia.org/wiki/R%C3%B6ssler_attractor .
     """
     return array([-y[1] - y[2], y[0] + 0.2 * y[1], 0.2 + y[2] * (y[0] - 5.7)])
 
 
+def chua(_, y: ndarray) -> ndarray:
+    """
+    Ланцюг Чуа, за основу взято даний атрактор для електричних кіл:
+    https://en.wikipedia.org/wiki/Chua%27s_circuit .
+    """
+    return array(
+        [
+            9 * (y[1] - y[0] + 0.71 * y[0] + 0.22 * (abs(y[0] + 1) - abs(y[0] - 1))),
+            y[0] - y[1] + y[2],
+            -14.29 * y[1]
+        ]
+    )
+
+
 if __name__ == '__main__':
-    # Перелік функцій - правих частин систем рівнянь динамічних систем.
-    fs = {'rossler': rossler}
+    # Перелік функцій - правих частин рівнянь динамічних систем.
+    fs = {'rossler': rossler, 'chua': chua}
     parser = ArgumentParser(description='Colorful attractor visualizations')
     # Аргумент командного рядка для ідентифікації обраного графіка.
     parser.add_argument(
