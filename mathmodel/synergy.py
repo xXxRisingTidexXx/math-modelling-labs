@@ -95,7 +95,7 @@ def solve_ivp_euler(
 
 def rossler(_, y: ndarray) -> ndarray:
     """
-    Функція правих частинь рівнянь атрактора Рьослера:
+    Функція правих частинь рівнянь аттрактора Рьослера:
     https://en.wikipedia.org/wiki/R%C3%B6ssler_attractor .
     """
     return array([-y[1] - y[2], y[0] + 0.2 * y[1], 0.2 + y[2] * (y[0] - 5.7)])
@@ -103,7 +103,7 @@ def rossler(_, y: ndarray) -> ndarray:
 
 def chua(_, y: ndarray) -> ndarray:
     """
-    Ланцюг Чуа, за основу взято даний атрактор для електричних кіл:
+    Ланцюг Чуа, за основу взято даний аттрактор для електричних кіл:
     https://en.wikipedia.org/wiki/Chua%27s_circuit .
     """
     return array(
@@ -117,7 +117,7 @@ def chua(_, y: ndarray) -> ndarray:
 
 def ring(_, y: ndarray) -> ndarray:
     """
-    TODO
+    Фігура у вигляді майже замкненого кільця, похідна від ланцюга Чуа. 
     """
     return array(
         [
@@ -135,35 +135,35 @@ def ring(_, y: ndarray) -> ndarray:
 
 def bowl(_, y: ndarray) -> ndarray:
     """
-    TODO
+    Мископодібний нащадок аттрактора Рьослера.
     """
     return array([-y[1] - y[2], y[0] + 0.2 * y[1], 0.2 + y[2] * (y[0] - 1.7)])
 
 
 def stripe(_, y: ndarray) -> ndarray:
     """
-    TODO
+    Замкнена стрічка, потомок Рьослера.
     """
     return array([-y[1] - y[2], y[0] + 0.2 * y[1], 0.2 + y[2] * (y[0] - 0.7)])
 
 
 def spiral(_, y: ndarray) -> ndarray:
     """
-    TODO
+    Спіральний вигляд аттрактора Рьослера.
     """
     return array([-y[1] - y[2], y[0] + 0.2 * y[1], 10.2 + y[2] * (y[0] - 6)])
 
 
 def lasso(_, y: ndarray) -> ndarray:
     """
-    TODO
+    Ще один ласоподібний різновид Рьослера.
     """
     return array([6 - y[1] - y[2], y[0] + 0.03 * y[1], 4.2 + y[2] * (y[0] - 3)])
 
 
 def signature(_, y: ndarray) -> ndarray:
     """
-    TODO
+    Диск-і-підпис, представлення ланцюга Чуа.
     """
     return array(
         [
@@ -176,7 +176,7 @@ def signature(_, y: ndarray) -> ndarray:
 
 def disk(_, y: ndarray) -> ndarray:
     """
-    TODO
+    Щільно спресований диск на основі Чуа.
     """
     return array(
         [
@@ -189,7 +189,7 @@ def disk(_, y: ndarray) -> ndarray:
 
 def globe(_, y: ndarray) -> ndarray:
     """
-    TODO
+    Вигнута глобула, потомок ланцюга Чуа.
     """
     return array(
         [
