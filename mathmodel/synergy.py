@@ -115,9 +115,105 @@ def chua(_, y: ndarray) -> ndarray:
     )
 
 
+def ring(_, y: ndarray) -> ndarray:
+    """
+    TODO
+    """
+    return array(
+        [
+            0.3 * (
+                y[1] -
+                y[0] +
+                0.0013 * y[0] +
+                0.09 * (abs(y[0] + 0.0012) - abs(y[0] - 0.0012))
+            ),
+            y[0] - y[1] + 3 * y[2] + 0.03,
+            -0.002 * y[1]
+        ]
+    )
+
+
+def bowl(_, y: ndarray) -> ndarray:
+    """
+    TODO
+    """
+    return array([-y[1] - y[2], y[0] + 0.2 * y[1], 0.2 + y[2] * (y[0] - 1.7)])
+
+
+def stripe(_, y: ndarray) -> ndarray:
+    """
+    TODO
+    """
+    return array([-y[1] - y[2], y[0] + 0.2 * y[1], 0.2 + y[2] * (y[0] - 0.7)])
+
+
+def spiral(_, y: ndarray) -> ndarray:
+    """
+    TODO
+    """
+    return array([-y[1] - y[2], y[0] + 0.2 * y[1], 10.2 + y[2] * (y[0] - 6)])
+
+
+def lasso(_, y: ndarray) -> ndarray:
+    """
+    TODO
+    """
+    return array([6 - y[1] - y[2], y[0] + 0.03 * y[1], 4.2 + y[2] * (y[0] - 3)])
+
+
+def signature(_, y: ndarray) -> ndarray:
+    """
+    TODO
+    """
+    return array(
+        [
+            7 * (y[1] - y[0] + 0.71 * y[0] + 0.22 * (abs(y[0] + 1) - abs(y[0] - 1))),
+            y[0] - y[1] + y[2] - 0.002,
+            -16 * y[1] + 0.5
+        ]
+    )
+
+
+def disk(_, y: ndarray) -> ndarray:
+    """
+    TODO
+    """
+    return array(
+        [
+            9 * (y[1] - y[0] + 0.1 * y[0] + 0.05 * (abs(y[0] + 1) - abs(y[0] - 1))),
+            y[0] - y[1] + y[2] - 0.002,
+            -16 * y[1] + 0.5
+        ]
+    )
+
+
+def globe(_, y: ndarray) -> ndarray:
+    """
+    TODO
+    """
+    return array(
+        [
+            9 * (y[1] - 2 * y[0] + 0.8 * y[0] + 0.3 * (abs(y[0] + 1) - abs(y[0] - 1))),
+            y[0] - y[1] + y[2],
+            -14.29 * y[1]
+        ]
+    )
+
+
 if __name__ == '__main__':
     # Перелік функцій - правих частин рівнянь динамічних систем.
-    fs = {'rossler': rossler, 'chua': chua}
+    fs = {
+        'rossler': rossler,
+        'chua': chua,
+        'ring': ring,
+        'bowl': bowl,
+        'stripe': stripe,
+        'spiral': spiral,
+        'lasso': lasso,
+        'signature': signature,
+        'disk': disk,
+        'globe': globe
+    }
     parser = ArgumentParser(description='Colorful attractor visualizations')
     # Аргумент командного рядка для ідентифікації обраного графіка.
     parser.add_argument(
