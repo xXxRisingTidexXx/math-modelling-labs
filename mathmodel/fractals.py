@@ -6,7 +6,7 @@ def main():
     TODO
     """
     figure = Figure()
-    width, height = 400, 200
+    width, height = 1000, 500
     figure.add_trace(
         Heatmap(
             z=[
@@ -22,9 +22,8 @@ def main():
     )
     figure.update_layout(
         showlegend=False,
-        paper_bgcolor='black',
         plot_bgcolor='black',
-        margin={'t': 0, 'r': 0, 'b': 0, 'l': 0}
+        margin={'t': 30, 'r': 20, 'b': 30, 'l': 20}
     )
     figure.update_xaxes(
         showticklabels=False,
@@ -43,14 +42,14 @@ def main():
     figure.show()
 
 
-def paint(x: float, y: float, stop: int = 1000) -> float:
+def paint(x: float, y: float, stop: int = 100) -> float:
     """
     TODO
     """
     z = complex(x * 3 - 1.5, y * 3 - 1.5)
     n = 0
     while abs(z) <= 10 and n < stop:
-        z = z ** 2 - 0.1 + 0.65j
+        z = z ** 2 - 0.7269 + 0.1889j
         n += 1
     return n / stop
 
