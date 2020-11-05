@@ -56,7 +56,7 @@ def paint(x: float, y: float, stop: int = 100) -> float:
     z = complex(x * 3 - 1.5, y * 3 - 1.5)
     n = 0
     while abs(z) <= 10 and n < stop:
-        z = z ** 2 - 0.7269 + 0.1889j
+        z = z ** 2 - 0.8j
         n += 1
     return n / stop
 
