@@ -16,8 +16,8 @@ def julia():
     figure.add_trace(
         Heatmap(
             z=[
-                [paint(x, y) for x in linspace(-1.5, 1.5, 1000)]
-                for y in linspace(-1.5, 1.5, 500)
+                [paint(x, y) for x in linspace(-3.4, 3.4, 1600)]
+                for y in linspace(1.7, -1.7, 800)
             ],
             zmin=0,
             zmax=1,
@@ -28,7 +28,7 @@ def julia():
     )
     figure.update_layout(
         showlegend=False,
-        plot_bgcolor='black',
+        plot_bgcolor='white',
         margin={'t': 30, 'r': 20, 'b': 30, 'l': 20}
     )
     figure.update_xaxes(
@@ -55,36 +55,37 @@ def paint(x: float, y: float) -> float:
     координати зображення, що вже нормалізовані за шириною і висотою.
     """
     z = complex(x, y)
-    n, stop = 0, 100
+    n, stop = 0, 50
     while abs(z) <= 10 and n < stop:
         z = z ** 2 - 0.8j
         n += 1
     return n / stop
 
 
-def lyapunov():
+def burning_ship():
     """
     TODO
     https://en.wikipedia.org/wiki/Lyapunov_fractal
     """
     figure = Figure()
-    s = [True, False]
-    width, height = 400, 200
     figure.add_trace(
         Heatmap(
             z=[
-                [
-                    draw(1 if s[(i * width + j) % len(s)] else 0)
-                    for j in range(width)
-                ]
-                for i in range(height)
+                [draw(x, y) for x in linspace(-2.2, 1.8, 1600)]
+                for y in linspace(1, -1, 800)
             ],
+            zmin=0,
+            zmax=1,
             hoverinfo='skip',
-            colorscale='cividis',
+            colorscale='hot',
             showscale=False
         )
     )
-    figure.update_layout(showlegend=False, margin={'t': 30, 'r': 20, 'b': 30, 'l': 20})
+    figure.update_layout(
+        showlegend=False,
+        margin={'t': 30, 'r': 20, 'b': 30, 'l': 20},
+        plot_bgcolor='white'
+    )
     figure.update_xaxes(
         showticklabels=False,
         showgrid=False,
@@ -102,17 +103,22 @@ def lyapunov():
     figure.show()
 
 
-def draw(r: float) -> float:
+def draw(x: float, y: float) -> float:
     """
     TODO
     """
-    return 0
+    z, c = 0, complex(x, y)
+    n, stop = 0, 50
+    while abs(z) <= 4 and n < stop:
+        z = complex(abs(z.real), abs(z.imag)) ** 2 + c
+        n += 1
+    return 1 - n / stop
 
 
 if __name__ == '__main__':
-    fs = {'julia': julia, 'lyapunov': lyapunov}
+    fs = {'julia': julia, 'burning-ship': burning_ship}
     parser = ArgumentParser(description='Beautiful discrete fractal visualizations')
-    # Аргумент командного рядка для ідентифікації обраного графіка.
+    # Аргумент командного рядка для ідентифікації обраного фрактала.
     parser.add_argument(
         '-f',
         default='julia',
