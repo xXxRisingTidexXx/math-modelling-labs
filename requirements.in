@@ -1,9 +1,9 @@
-scipy
 pandas
 plotly
 tabulate
 shapely
-matplotlib
 area
 opencv-python
 kaleido
+scikit-learn
+scikit-image
