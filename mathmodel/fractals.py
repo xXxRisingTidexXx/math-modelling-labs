@@ -64,14 +64,15 @@ def paint(x: float, y: float) -> float:
 
 def burning_ship():
     """
-    TODO
-    https://en.wikipedia.org/wiki/Burning_Ship_fractal
+    Функція обчислення й рендерингу "Корабля, що палає" - своєрідного фракталу Ресслера.
+    Довідка: https://en.wikipedia.org/wiki/Burning_Ship_fractal . Принцип обрахунку
+    інтенсивності точок такий самий, як і в попередньому фракталі.
     """
     figure = Figure()
     figure.add_trace(
         Heatmap(
             z=[
-                [draw(x, y) for x in linspace(-3.1, 2.1, 1600)]
+                [draw(x, y) for x in linspace(-2.9, 2.3, 1600)]
                 for y in linspace(0.7, -1.9, 800)
             ],
             zmin=0,
@@ -81,7 +82,7 @@ def burning_ship():
                 [0, 'rgb(103, 0, 31)'],
                 [0.2, 'rgb(178, 24, 43)'],
                 [0.4, 'rgb(214, 96, 77)'],
-                [0.6, 'rgb(125, 135, 135)'],
+                [0.6, 'rgb(244, 165, 130)'],
                 [0.8, 'rgb(77, 77, 77)'],
                 [1, 'rgb(0, 0, 0)']
             ],
@@ -107,12 +108,14 @@ def burning_ship():
         showline=False,
         zeroline=False
     )
-    figure.write_image('images/burning_ship2.png', width=1600, height=800)
+    figure.write_image('images/burning_ship.png', width=1600, height=800)
 
 
 def draw(x: float, y: float) -> float:
     """
-    TODO
+    Функція обчислення "інтенсивності" точки. Ця величина необхідна, аби за шкалою
+    [0, 1] мати змогу співставити числа в пікселях й кольори. При чому, х та у -
+    координати зображення, що вже нормалізовані за шириною і висотою.
     """
     z, c = 0, complex(x, y)
     n, stop = 0, 50
