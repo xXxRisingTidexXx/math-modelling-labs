@@ -1,48 +1,40 @@
-from PIL.Image import fromarray
+from typing import Tuple
+from PIL.Image import fromarray, Image
 from numpy import linspace, pi, uint8
 from cmath import exp
+from multiprocessing import Pool
 
 
 def main():
-    images = [
+    pool = Pool(4)
+    pairs = pool.map(draw, enumerate(linspace(0, 2 * pi, 250)))
+    pool.close()
+    images = [p[1] for p in sorted(pairs, key=lambda p: p[0])]
+    images[0].save(
+        'images/julia.gif',
+        save_all=True,
+        append_images=images[1:],
+        optimize=True,
+        duration=65,
+        loop=0
+    )
+
+
+def draw(ia: Tuple[int, float]) -> Tuple[int, Image]:
+    return (
+        ia[0],
         fromarray(
             uint8(
                 [
-                    [pixel(x, y, a) for x in linspace(3.4, -3.4, 1600)]
-                    for y in linspace(1.7, -1.7, 800)
+                    [paint(x, y, ia[1]) for x in linspace(3.5, -3.5, 200)]
+                    for y in linspace(3.5, -3.5, 200)
                 ]
             )
         )
-        for a in linspace(0, 2 * pi, 100)
-    ]
-
-    # width = 200
-    # center = width // 2
-    # color_1 = (0, 0, 0)
-    # color_2 = (255, 255, 255)
-    # max_radius = int(center * 1.5)
-    # step = 8
-    # for i in range(0, max_radius, step):
-    #     im = Image.new('RGB', (width, width), color_1)
-    #     draw = ImageDraw.Draw(im)
-    #     draw.ellipse((center - i, center - i, center + i, center + i), fill=color_2)
-    #     images.append(im)
-    # for i in range(0, max_radius, step):
-    #     im = Image.new('RGB', (width, width), color_2)
-    #     draw = ImageDraw.Draw(im)
-    #     draw.ellipse((center - i, center - i, center + i, center + i), fill=color_1)
-    #     images.append(im)
-    # images[0].save(
-    #     'images/pillow.gif',
-    #     save_all=True,
-    #     append_images=images[1:],
-    #     optimize=False,
-    #     duration=40,
-    #     loop=0
-    # )
+    )
 
 
-def pixel(x: float, y: float, a: float) -> float:
+def paint(x: float, y: float, a: float) -> float:
     z, c = x + y * 1j, 0.7885 * exp(a * 1j)
     n, stop = 0, 50
     while abs(z) <= 10 and n < stop:
