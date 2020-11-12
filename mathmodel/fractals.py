@@ -16,7 +16,7 @@ def julia():
     figure.add_trace(
         Heatmap(
             z=[
-                [paint(x, y) for x in linspace(-3.4, 3.4, 1600)]
+                [paint(x, y) for x in linspace(3.4, -3.4, 1600)]
                 for y in linspace(1.7, -1.7, 800)
             ],
             zmin=0,
@@ -29,7 +29,7 @@ def julia():
     figure.update_layout(
         showlegend=False,
         plot_bgcolor='white',
-        margin={'t': 30, 'r': 20, 'b': 30, 'l': 20}
+        margin={'t': 0, 'r': 0, 'b': 0, 'l': 0}
     )
     figure.update_xaxes(
         showticklabels=False,
@@ -45,7 +45,7 @@ def julia():
         showline=False,
         zeroline=False
     )
-    figure.show()
+    figure.write_image('images/julia.png', width=1600, height=800)
 
 
 def paint(x: float, y: float) -> float:
@@ -57,7 +57,7 @@ def paint(x: float, y: float) -> float:
     z = complex(x, y)
     n, stop = 0, 50
     while abs(z) <= 10 and n < stop:
-        z = z ** 2 - 0.8j
+        z = z ** 2 + 0.285 + 0.01j
         n += 1
     return n / stop
 
@@ -65,25 +65,32 @@ def paint(x: float, y: float) -> float:
 def burning_ship():
     """
     TODO
-    https://en.wikipedia.org/wiki/Lyapunov_fractal
+    https://en.wikipedia.org/wiki/Burning_Ship_fractal
     """
     figure = Figure()
     figure.add_trace(
         Heatmap(
             z=[
-                [draw(x, y) for x in linspace(-2.2, 1.8, 1600)]
-                for y in linspace(1, -1, 800)
+                [draw(x, y) for x in linspace(-3.1, 2.1, 1600)]
+                for y in linspace(0.7, -1.9, 800)
             ],
             zmin=0,
             zmax=1,
             hoverinfo='skip',
-            colorscale='hot',
+            colorscale=[
+                [0, 'rgb(103, 0, 31)'],
+                [0.2, 'rgb(178, 24, 43)'],
+                [0.4, 'rgb(214, 96, 77)'],
+                [0.6, 'rgb(125, 135, 135)'],
+                [0.8, 'rgb(77, 77, 77)'],
+                [1, 'rgb(0, 0, 0)']
+            ],
             showscale=False
         )
     )
     figure.update_layout(
         showlegend=False,
-        margin={'t': 30, 'r': 20, 'b': 30, 'l': 20},
+        margin={'t': 0, 'r': 0, 'b': 0, 'l': 0},
         plot_bgcolor='white'
     )
     figure.update_xaxes(
@@ -100,7 +107,7 @@ def burning_ship():
         showline=False,
         zeroline=False
     )
-    figure.show()
+    figure.write_image('images/burning_ship2.png', width=1600, height=800)
 
 
 def draw(x: float, y: float) -> float:
@@ -112,7 +119,7 @@ def draw(x: float, y: float) -> float:
     while abs(z) <= 4 and n < stop:
         z = complex(abs(z.real), abs(z.imag)) ** 2 + c
         n += 1
-    return 1 - n / stop
+    return n / stop
 
 
 if __name__ == '__main__':
