@@ -54,8 +54,7 @@ def paint(x: float, y: float) -> float:
     [0, 1] мати змогу співставити числа в пікселях й кольори. При чому, х та у -
     координати зображення, що вже нормалізовані за шириною і висотою.
     """
-    z = complex(x, y)
-    n, stop = 0, 50
+    z, n, stop = x + y * 1j, 0, 50
     while abs(z) <= 10 and n < stop:
         z = z ** 2 + 0.285 + 0.01j
         n += 1
@@ -117,10 +116,9 @@ def draw(x: float, y: float) -> float:
     [0, 1] мати змогу співставити числа в пікселях й кольори. При чому, х та у -
     координати зображення, що вже нормалізовані за шириною і висотою.
     """
-    z, c = 0, complex(x, y)
-    n, stop = 0, 50
+    z, n, stop = 0, 0, 50
     while abs(z) <= 4 and n < stop:
-        z = complex(abs(z.real), abs(z.imag)) ** 2 + c
+        z = complex(abs(z.real), abs(z.imag)) ** 2 + x + y * 1j
         n += 1
     return n / stop
 
