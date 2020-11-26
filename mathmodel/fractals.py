@@ -128,7 +128,7 @@ def mandelbrot():
 
 def render(x: float, y: float) -> float:
     """
-    TODO
+    Обчислює інтенсивність кольору в точці.
     """
     z, n, stop = 0, 0, 50
     while abs(z) <= 2 and n < stop:
