@@ -2,11 +2,11 @@ from typing import Tuple
 from PIL.Image import fromarray, Image
 from numpy import linspace, pi, uint8
 from cmath import exp
-from multiprocessing import Pool
+from multiprocessing import Pool, cpu_count
 
 
 def main():
-    pool = Pool(4)
+    pool = Pool(cpu_count())
     pairs = pool.map(draw, enumerate(linspace(0, 2 * pi, 250)))
     pool.close()
     images = [p[1] for p in sorted(pairs, key=lambda p: p[0])]
